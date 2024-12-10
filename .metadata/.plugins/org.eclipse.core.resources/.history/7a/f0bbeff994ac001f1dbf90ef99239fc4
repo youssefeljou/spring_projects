@@ -1,0 +1,39 @@
+package com.example.book.repository;
+
+import jakarta.persistence.Entity;
+import jakarta.transaction.Transactional;
+import org.springframework.data.jpa.repository.EntityGraph;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
+import com.example.book.base.BaseRepository;
+import com.example.book.entity.Book;
+
+import java.util.List;
+import java.util.Optional;
+
+@Repository
+public interface BookRepository extends BaseRepository<Book, Long> {
+
+
+    @EntityGraph(attributePaths = {"author"})
+    Optional<Book> findById(long id);
+
+    @Override
+    @EntityGraph(attributePaths = {"author"})
+    List<Book> findAll();
+
+    @Query("SELECT a1.id, (SELECT count(*) FROM Book b WHERE b.authorId = a1.id) FROM Author a1 WHERE a1.id = ?1 AND a1.isDeleted = 0")
+    List<Object[]> filter(String authorId, double someValue, long anotherValue);
+
+    
+    @Transactional
+    @Modifying
+    @Query("delete from Book where author.id =:id")
+    int deleteByAuthorId (long id);
+
+    List<Book> findByAuthorId(long authorId);
+
+
+}

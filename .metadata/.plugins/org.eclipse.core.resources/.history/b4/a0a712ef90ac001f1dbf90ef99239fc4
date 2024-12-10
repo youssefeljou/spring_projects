@@ -1,0 +1,22 @@
+package com.example.book.repository;
+
+import java.util.List;
+
+import jakarta.transaction.Transactional;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
+import com.example.book.base.BaseRepository;
+import com.example.book.entity.Author;
+
+@Repository
+public interface AuthorRepository extends BaseRepository<Author, Long> , JpaSpecificationExecutor<Author> {
+
+    //List<Author> findByName(String name);
+
+    @Transactional
+    @Query(value = "UPDATE Author a SET a.isDeleted = false WHERE a.id= ?1")
+    @Modifying
+    public void restoreById(long id);
+}

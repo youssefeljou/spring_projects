@@ -1,0 +1,23 @@
+package com.example.book.service;
+
+import java.util.List;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.example.book.dto.PostDto;
+
+@Service
+public class PostService {
+
+	private static String POST_URL="https://jsonplaceholder.typicode.com/posts";
+	
+	public PostDto getPostById(Long id) {
+		
+		RestTemplate restTemplate= new RestTemplate();
+		ResponseEntity<PostDto> result =restTemplate.getForEntity(POST_URL, PostDto.class);
+		return result.getBody();
+	}
+	
+}

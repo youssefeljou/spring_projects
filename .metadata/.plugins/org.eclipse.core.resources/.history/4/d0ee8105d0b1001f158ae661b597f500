@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <!-- Console Appender: Outputs logs to the console (standard output) -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <!-- PatternLayout: Defines the format of the log messages -->
+            <PatternLayout
+                pattern="%style{%d{ISO8601}}{black} %highlight{%-5level }[%style{%t}{bright,blue}] %style{%C{1.}}{bright,yellow}: %msg%n%throwable" />
+        </Console>
+
+        <!-- RollingFile Appender: Logs are written to a file that rolls over based on time or size -->
+        <RollingFile name="RollingFile"
+            fileName="/logs/spring-boot-logger-log4j2.log"
+            filePattern="/logs/$${date:yyyy-MM}/spring-boot-logger-log4j2-%d{-dd-MMMM-yyyy}-%i.log.gz">
+            <!-- PatternLayout: Defines the format of the log messages in the file -->
+            <PatternLayout>
+                <pattern>%d %p %C{1.} [%t] %m%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <!-- Rollover policies for log file -->
+                <!-- Rollover on startup -->
+                <OnStartupTriggeringPolicy />
+                <!-- Rollover when the file reaches 10MB -->
+                <SizeBasedTriggeringPolicy size="10 MB" />
+                <!-- Time-based rollover (daily) -->
+                <TimeBasedTriggeringPolicy />
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <!-- Root Logger: Logs everything at INFO level -->
+        <Root level="info">
+            <!-- Attach Console Appender to the root logger -->
+            <AppenderRef ref="Console" />
+            <!-- Attach RollingFile Appender to the root logger -->
+            <AppenderRef ref="RollingFile" />
+        </Root>
+
+        <!-- Logger for 'com.baeldung' package: Logs at TRACE level -->
+        <Logger name="com.baeldung" level="trace"></Logger>
+    </Loggers>
+
+</Configuration>

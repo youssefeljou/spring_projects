@@ -1,0 +1,68 @@
+package com.example.book.base;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.transaction.annotation.Transactional;
+
+import jakarta.persistence.MappedSuperclass;
+
+@MappedSuperclass
+public class BaseService<T extends BaseEntity<ID>, ID extends Number> {
+
+	@Autowired
+	private BaseRepository<T, ID> baseRepository;
+
+	
+	
+	public T findById(ID id) 
+	{
+		return baseRepository.findById(id).orElseThrow();
+	}
+	
+	public T getById(ID id) 
+	{
+		return baseRepository.getById(id);
+	}
+	
+	public List<T> findAll()
+	{
+		return baseRepository.findAll();
+	}
+	
+	public T insert(T entity)
+	{
+		if (entity.getId() != (Long)null)
+		{
+			throw new RuntimeException();
+		}
+		
+		return baseRepository.save(entity);
+	}
+	
+	public List<T> insertAll(List<T> entity)
+	{
+		return baseRepository.saveAll(entity);
+	}
+	
+	public T update(T entity) 
+	{
+		return baseRepository.save(entity);
+	}
+	
+	public void deleteById(ID id)
+	{
+		 baseRepository.deleteById(id);
+	}
+	
+	@Transactional
+	@Modifying
+	public void updateStatusById(T entity,ID id, String status)
+	{
+		entity=baseRepository.findById(id)
+                				.orElseThrow(() -> new RuntimeException("Entity not found"));
+		entity.setStatuscode(status);
+		baseRepository.save(entity);
+	}
+}

@@ -1,0 +1,99 @@
+package com.example.book.entity;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.annotations.Formula;
+
+import com.example.book.base.BaseEntity;
+import com.example.book.validator.IpAddress;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
+import jakarta.validation.constraints.Email;
+
+/**
+ * Entity class representing an Author (Auther). This class contains information
+ * about the author, including the number of books written, the author's email,
+ * IP address, and a list of books.
+ */
+@Entity
+@Table(name = "authers")
+public class Auther extends BaseEntity<Long> {
+
+	// Formula to calculate the count of books written by the author
+	@Formula("(select count(*) from books book where book.auther_id = id)")
+	private long bookCount;
+
+	// The author's IP address, validated using the custom IpAddress annotation
+	@IpAddress
+	private String ipAddress;
+
+	// The author's email, validated with the @Email annotation
+	@Email(message = "{validation.constraints.email.message}")
+	private String email;
+
+	// List of books written by the author, mapped by the 'auther' field in Book
+	// entity
+	//@JsonManagedReference
+	//@OneToMany(mappedBy = "auther")
+	//private List<Book> books = new ArrayList<>();
+
+	// Path to the author's image
+	private String imagePath;
+
+	// Getter and setter methods for all fields
+
+	public String getImagePath() {
+		return imagePath;
+	}
+
+	public void setImagePath(String imagePath) {
+		this.imagePath = imagePath;
+	}
+
+	public String getIpAddress() {
+		return ipAddress;
+	}
+
+	public void setIpAddress(String ipAddress) {
+		this.ipAddress = ipAddress;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public long getBookCount() {
+		return bookCount;
+	}
+
+	public void setBookCount(long bookCount) {
+		this.bookCount = bookCount;
+	}
+
+	/*
+	// Method to add a book to the author's list of books
+	public void addBook(Book book) {
+		books.add(book);
+	}
+
+	// Method to remove a book from the author's list of books
+	public void removeBook(Book book) {
+		books.remove(book);
+	}
+*/
+	public List<Book> getBooks() {
+		return books;
+	}
+
+	public void setBooks(List<Book> books) {
+		this.books = books;
+	}
+}

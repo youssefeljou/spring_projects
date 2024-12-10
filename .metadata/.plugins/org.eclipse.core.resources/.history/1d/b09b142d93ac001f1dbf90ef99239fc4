@@ -1,0 +1,64 @@
+package com.example.book.entity;
+
+import com.example.book.validator.IpAddress;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
+import com.example.book.base.BaseEntity;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+import org.hibernate.annotations.SQLDelete;
+import org.hibernate.annotations.Where;
+
+@SQLDelete(sql = "update books set is_deleted = true where id = ?")
+@Where(clause = "is_deleted = false")
+@Entity
+@Table(name = "books")
+public class Book extends BaseEntity<Long> {
+
+    @NotBlank(message = "book name cannot be blank")
+    @NotEmpty(message = "book name cannot be empty")
+    private String name;
+
+
+    @NotNull(message = "price cannot be null")
+    private double price;
+
+    @NotNull(message = "author cannot be null")
+    @JsonBackReference
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "author_id")
+    private Author author;
+
+    public void setPrice(@NotNull(message = "price cannot be null") double price) {
+        this.price = price;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Integer price) {
+        this.price = price;
+    }
+
+    public Author getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(Author author) {
+        this.author = author;
+    }
+}

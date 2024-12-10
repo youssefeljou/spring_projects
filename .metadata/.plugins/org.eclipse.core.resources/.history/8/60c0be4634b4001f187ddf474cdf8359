@@ -1,0 +1,59 @@
+package com.example.book.aspect;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Pointcut;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
+import org.springframework.util.StringUtils;
+
+@Aspect
+@Component
+public class LogTimeAspect {
+
+    Logger log = LoggerFactory.getLogger(LogTimeAspect.class);
+
+    
+    @Pointcut(value = "execution(* com.example.book.repository.*.*(..))")
+	public void forRepositoryLog() {}
+	
+	@Pointcut(value = "execution(* com.example.book.service.*.*(..))")
+	public void forServiceLog () {}
+	
+	@Pointcut(value = "execution(* com.example.book.controller.*.*(..))")
+	public void forControllerLog () {}
+	
+	@Pointcut(value = "forRepositoryLog() || forServiceLog() || forControllerLog()")
+	public void forAllApp() {}
+    
+    @Around("execution(* com.example.book.controller.PostController.*(..))")
+    public Object logTime(ProceedingJoinPoint joinPoint) throws Throwable {
+        Long startTime = System.currentTimeMillis();
+        StringBuilder sb = new StringBuilder("KPI: ");
+        sb.append("{").append(joinPoint.getKind()).append("} \t for: ").append(joinPoint.getSignature())
+                .append("\t withArgs: ").append("(").append(StringUtils.arrayToDelimitedString(joinPoint.getArgs(), ","))
+                .append(")");
+        sb.append("\t took: ");
+        Object returnValue = joinPoint.proceed();
+        log.info(sb.append(System.currentTimeMillis() - startTime).append(" ms.").toString());
+        return returnValue;
+    }
+	@Before(value = "forAllApp()")
+	public void beforMethod(JoinPoint joinPoint) {
+		
+		String methodName = joinPoint.getSignature().toShortString();
+		
+		log.info("====>  Method Name is >> {}" , methodName );
+		
+		Object [] args = joinPoint.getArgs();
+		
+		for (Object arg : args) {
+			
+			log.info("===> argument >> {}" , arg);
+		}
+		
+	}
+
+}

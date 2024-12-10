@@ -1,0 +1,35 @@
+package com.example.book.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.example.book.base.BaseService;
+import com.example.book.entity.Auther;
+import com.example.book.repository.AutherRepo;
+import com.example.book.repository.AutherSpec;
+
+@Service
+public class AutherService extends BaseService<Auther, Long>{
+
+	@Autowired
+	private AutherRepo autherRepo;
+	
+	@Override
+	public Auther update(Auther entity) 
+	{
+		Auther auther=findById(entity.getId());
+		auther.setName(entity.getName());
+		return super.update(entity);
+	}
+	
+	
+	public List<Auther> findByAutherSpec(String authername) 
+	{
+		AutherSpec autherSpec=new AutherSpec(authername);
+		return autherRepo.findAll(autherSpec);
+	}
+	
+}

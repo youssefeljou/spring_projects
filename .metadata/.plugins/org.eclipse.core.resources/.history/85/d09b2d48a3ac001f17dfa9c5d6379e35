@@ -1,0 +1,38 @@
+package com.example.book.config;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
+
+import com.example.book.entity.Auther;
+import com.example.book.service.AutherService;
+import com.example.book.service.BookService;
+
+@Component
+public class StartupApp implements CommandLineRunner {
+
+	@Autowired
+	private AutherService autherService;
+	
+	@Autowired
+	private BookService bookService;
+	
+	
+	@Override
+	public void run(String... args) throws Exception {
+		
+		Auther auther1= new Auther();
+		auther1.setName("Youssef");
+		
+		
+		Auther auther2= new Auther();
+		auther2.setName("Adel");
+		
+		Auther auther3= new Auther();
+		auther3.setName("Ahmed");
+		
+		
+		
+	}
+
+}

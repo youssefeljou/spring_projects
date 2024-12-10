@@ -1,0 +1,25 @@
+package com.example.book.repository;
+
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+import org.springframework.stereotype.Repository;
+
+import com.example.book.base.BaseRepository;
+import com.example.book.entity.Auther;
+
+/**
+ * Repository interface for {@link Auther} entity.
+ * Extends {@link BaseRepository} and {@link JpaSpecificationExecutor} to provide CRUD operations and specification execution.
+ */
+@Repository
+public interface AutherRepo extends BaseRepository<Auther, Long>, JpaSpecificationExecutor<Auther> {
+
+    /**
+     * Find an author by email.
+     *
+     * @param email the email of the author
+     * @return an optional containing the author if found, otherwise empty
+     */
+    Optional<Auther> findByEmail(String email);
+}

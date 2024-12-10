@@ -1,0 +1,44 @@
+package com.example.book.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.book.base.BaseService;
+import com.example.book.entity.Auther;
+import com.example.book.entity.Book;
+import com.example.book.repository.BookRrepo;
+
+@Service
+public class BookService extends BaseService<Book, Long>{
+
+	private BookRrepo bookRrepo;
+	
+	
+	
+	public BookService(BookRrepo bookRrepo) {
+		super();
+		this.bookRrepo = bookRrepo;
+	}
+
+
+	public Book update(Book entity) 
+	{
+		Book book=findById(entity.getId());
+		book.setName(entity.getName());
+		return super.update(entity);
+	}
+	
+	
+	public int  deleteByAutherId (Long id)
+	{
+		return bookRrepo.deleteByAutherId(id);
+	}
+	
+	public void updateBookStatuscodeById(long id,String statuscode)
+	{
+		bookRrepo.updateStatuscodeById(id, statuscode);
+	}
+	
+}

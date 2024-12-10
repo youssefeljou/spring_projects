@@ -1,0 +1,13 @@
+package com.example.book.dto;
+
+public class PostDto {
+
+	private Long id;
+
+	private String title;
+
+	private String body;
+
+	private Long userId;
+
+}

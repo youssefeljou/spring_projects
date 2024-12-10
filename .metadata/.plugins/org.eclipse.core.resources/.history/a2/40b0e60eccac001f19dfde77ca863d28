@@ -1,0 +1,32 @@
+package com.example.book.base;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.NoRepositoryBean;
+import org.springframework.transaction.annotation.Transactional;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
+
+@NoRepositoryBean
+public interface BaseRepository <T extends BaseEntity<ID>, ID extends Number> extends JpaRepository<T, ID>{
+
+	@PersistenceContext
+    private EntityManager entityManager;
+
+    @Override
+    @Transactional
+    public void updateEntityStatus(ID id, String statusCode) {
+        String entityName = getEntityName();
+        String queryString = String.format("UPDATE %s t SET t.statusCode = :statusCode WHERE t.id = :id", entityName);
+        entityManager.createQuery(queryString)
+                     .setParameter("statusCode", statusCode)
+                     .setParameter("id", id)
+                     .executeUpdate();
+    }
+
+    private String getEntityName() {
+        // Logic to derive the entity name
+        // This can be customized based on your specific needs
+        // For example, if the entities follow a naming convention, use that to get the entity name
+        return "YourEntityName"; // Replace with the actual logic to get the entity name
+    }

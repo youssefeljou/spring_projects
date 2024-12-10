@@ -1,0 +1,14 @@
+package com.example.book.mapper;
+
+import org.mapstruct.Mapper;
+
+import com.example.book.entity.Auther;
+
+@Mapper
+public interface AutherMapper {
+
+	//map from entity to dto
+	AutherDto mapToDto(Auther entity);
+	//map from dto to entity
+	
+}

@@ -1,0 +1,26 @@
+package com.example.book.service;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.example.book.base.BaseService;
+import com.example.book.entity.Auther;
+import com.example.book.repository.AutherRepo;
+
+@Service
+public class AutherService extends BaseService<Auther, Long>{
+
+	private AutherRepo autherRrepo;
+	
+	@Override
+	public Auther update(Auther entity) 
+	{
+		Auther auther=findById(entity.getId());
+		auther.setName(entity.getName());
+		return super.update(entity);
+	}
+	
+	
+	
+	
+}

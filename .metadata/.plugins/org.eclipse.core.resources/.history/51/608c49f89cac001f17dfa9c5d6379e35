@@ -1,0 +1,32 @@
+package com.example.book.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.book.entity.Auther;
+import com.example.book.repository.AutherRrepo;
+
+@Service
+public class AutherService {
+
+	
+	private AutherRrepo autherRrepo;
+
+	@Autowired
+	public AutherService(AutherRrepo autherRrepo) {
+		super();
+		this.autherRrepo = autherRrepo;
+	}
+	
+	public Auther findById(long id) 
+	{
+		return autherRrepo.findById(id).orElseThrow();
+	}
+	
+	public List<Auther> findAll()
+	{
+		return autherRrepo.findAll();
+	}
+}

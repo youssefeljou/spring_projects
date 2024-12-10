@@ -1,0 +1,53 @@
+package com.example.book.dto;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.example.book.base.BaseDto;
+import com.example.book.entity.Book;
+import com.example.book.validator.IpAddress;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.google.type.Date;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+/**
+ * Data Transfer Object (DTO) for the Auther entity.
+ * This class is used to transfer data between layers of the application, typically between the API and service layers.
+ * It represents an author with associated books and validates the author's email and IP address.
+ */
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class AutherDto extends BaseDto<Long>{
+
+	@NotBlank
+	private String name;
+	
+	// Author's IP address, validated by the custom IpAddress annotation
+	@IpAddress()
+	private String ipAddress;
+	
+	// Author's email address, validated by the @Email annotation
+	@Email
+	private String email;
+    
+    // List of books written by the author
+    private List<Book> books = new ArrayList<>();
+    
+    private long bookCount;
+
+	private String imagePath;
+	
+	private LocalDateTime createdDate;
+    
+    // Getter and setter methods for the fields
+
+   
+}

@@ -1,0 +1,53 @@
+package com.example.book.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.example.book.base.BaseService;
+import com.example.book.entity.Author;
+import com.example.book.repository.AuthorRepository;
+import com.example.book.repository.AuthorSpec;
+
+@Transactional
+@Service
+public class AuthorService extends BaseService<Author, Long>{
+
+    @Autowired
+    private AuthorRepository authorRepo;
+
+    
+    
+    @Override
+    public Author update(Author entity) {
+
+        Author author = findById(entity.getId());
+
+        author.setName(entity.getName());
+        return super.update(entity);
+    }
+
+    public List<Author> findByAuthorSpec(String authorname) {
+
+        AuthorSpec spec = new AuthorSpec(authorname);
+
+        return authorRepo.findAll(spec);
+
+    }
+    
+    @Transactional
+    public void restoreById(long id, String statusCode) {
+        // Fetch the Author entity by ID
+        Author author = authorRepo.findById(id)
+                .orElseThrow();
+
+        // Update the statusCode (or any other fields)
+        author.setStatusCode(statusCode);
+
+        // Save the updated entity back to the repository
+        authorRepo.save(author);
+    }
+
+}

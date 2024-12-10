@@ -1,0 +1,14 @@
+package com.example.book.base;
+
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface BaseRepository<T, ID> {
+
+    @Modifying
+    @Query("UPDATE #{#entityName} t SET t.statusCode = :statusCode WHERE t.id = :id")
+    void updateEntity(@Param("id") Number id, @Param("statusCode") String statusCode);
+}

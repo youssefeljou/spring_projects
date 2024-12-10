@@ -1,0 +1,64 @@
+package com.example.book.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.book.entity.Auther;
+import com.example.book.repository.AutherRrepo;
+
+@Service
+public class AutherService {
+
+	
+	private AutherRrepo autherRrepo;
+
+	@Autowired
+	public AutherService(AutherRrepo autherRrepo) {
+		super();
+		this.autherRrepo = autherRrepo;
+	}
+	
+	public Auther findById(long id) 
+	{
+		return autherRrepo.findById(id).orElseThrow();
+	}
+	
+	public Auther getById(long id) 
+	{
+		return autherRrepo.getById(id);
+	}
+	
+	public List<Auther> findAll()
+	{
+		return autherRrepo.findAll();
+	}
+	
+	public Auther insert(Auther entity)
+	{
+		if (entity.getId() != (Long)null)
+		{
+			throw new RuntimeException();
+		}
+		
+		return autherRrepo.save(entity);
+	}
+	
+	public List<Auther> insertAll(List<Auther> entity)
+	{
+		return autherRrepo.saveAll(entity);
+	}
+	
+	public Auther update(Auther entity) 
+	{
+		Auther auther=findById(entity.getId());
+		auther.setName(entity.getName());
+		return autherRrepo.save(entity);
+	}
+	
+	public void deleteById(long id)
+	{
+		 autherRrepo.deleteById(id);
+	}
+}

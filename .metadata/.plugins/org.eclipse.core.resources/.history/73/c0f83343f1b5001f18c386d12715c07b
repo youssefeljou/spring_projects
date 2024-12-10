@@ -1,0 +1,45 @@
+package com.example.book.dto;
+
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.example.book.base.BaseDto;
+import com.example.book.entity.Book;
+import com.example.book.validator.IpAddress;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+/**
+ * Data Transfer Object (DTO) for the Author entity.
+ * This class is used to transfer data between layers of the application,
+ * typically between the API and service layers.
+ */
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class AutherDto extends BaseDto<Long> {
+
+    @NotBlank(message = "Name cannot be blank")
+    private String name;
+
+    @IpAddress
+    private String ipAddress;
+
+    @Email(message = "Invalid email format")
+    private String email;
+
+    private List<Book> books = new ArrayList<>();
+
+    private long bookCount;
+
+    private String imagePath;
+
+    private LocalDateTime createdDate;
+}

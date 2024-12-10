@@ -1,0 +1,48 @@
+package com.example.book.dto;
+
+import java.util.List;
+
+import com.example.book.entity.Auther;
+import com.example.book.entity.Book;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+/**
+ * Data Transfer Object (DTO) for the Book entity. This class is used to
+ * transfer book data, typically between the API and service layers. It
+ * represents a book with its price, name, and associated author.
+ */
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class BookDto {
+
+	// Unique identifier for the book
+	private long id;
+
+	// Name of the book, validated to ensure it's not blank
+	@NotBlank
+	private String name;
+
+	// Price of the book, validated to be between 5 and 50000
+	@Min(value = 5)
+	@Max(value = 50000)
+	private double price;
+
+	// The author of the book, must not be null
+	@NotNull
+	private Auther auther;
+
+	// Getter and setter methods for the fields
+
+	
+}

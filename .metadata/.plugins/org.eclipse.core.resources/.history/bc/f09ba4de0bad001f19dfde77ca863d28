@@ -1,0 +1,46 @@
+package com.example.book.repository;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.data.jpa.domain.Specification;
+
+import com.example.book.entity.Auther;
+import com.example.book.entity.AutherSearch;
+
+import jakarta.persistence.criteria.CriteriaBuilder;
+import jakarta.persistence.criteria.CriteriaQuery;
+import jakarta.persistence.criteria.Predicate;
+import jakarta.persistence.criteria.Root;
+
+public class AutherSpec implements Specification<Auther>{
+
+    private AutherSearch autherSearch;
+
+    public AutherSpec(AutherSearch autherSearch) {
+		super();
+		this.autherSearch = autherSearch;
+	}
+
+	@Override
+    public Predicate toPredicate(Root<Auther> root, CriteriaQuery<?> query, CriteriaBuilder cb) {
+        // TODO Auto-generated method stub
+    	List<Predicate> predicates= new ArrayList<>();
+    	
+    	//Auther Name
+    	
+        if (autherSearch.getAutherName() != null || !autherSearch.getAutherName().isEmpty()) {
+            predicates.add( cb.equal(root.get("name"), autherSearch.getAutherName()));
+            
+        }
+        
+        //Auther Email
+    	
+        if (autherSearch.getEmail() != null || !autherSearch.getEmail().isEmpty()) {
+            predicates.add( cb.equal(root.get("name"), autherSearch.getAutherName()));
+            
+        }
+        return null;
+    }
+
+}

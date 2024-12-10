@@ -1,0 +1,18 @@
+package com.example.book.base;
+
+
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
+public abstract class BaseDto<ID> extends BaseDto<Long> {
+
+	private ID id;
+
+	private String statusCode;
+
+	private boolean isDeleted;
+
+}

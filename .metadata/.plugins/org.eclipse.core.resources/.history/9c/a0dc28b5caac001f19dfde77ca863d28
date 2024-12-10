@@ -1,0 +1,20 @@
+package com.example.book.service;
+
+
+import org.springframework.stereotype.Service;
+
+import com.example.book.base.BaseService;
+import com.example.book.entity.Book;
+
+@Service
+public class BookService extends BaseService<Book, Long>{
+
+	@Override
+	public Book update(Book entity) 
+	{
+		Book book=findById(entity.getId());
+		book.setName(entity.getName());
+		return super.update(entity);
+	}
+	
+}

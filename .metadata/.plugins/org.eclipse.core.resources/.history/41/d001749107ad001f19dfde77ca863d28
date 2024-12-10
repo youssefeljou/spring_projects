@@ -1,0 +1,34 @@
+package com.example.book.repository;
+
+import org.springframework.data.jpa.domain.Specification;
+
+import com.example.book.entity.Author;
+
+import jakarta.persistence.criteria.CriteriaBuilder;
+import jakarta.persistence.criteria.CriteriaQuery;
+import jakarta.persistence.criteria.Predicate;
+import jakarta.persistence.criteria.Root;
+
+public class AuthorSpec implements Specification<Author>{
+
+    private String authorname;
+
+
+
+    public AuthorSpec(String authorname) {
+        super();
+        this.authorname = authorname;
+    }
+
+
+
+    @Override
+    public Predicate toPredicate(Root<Author> root, CriteriaQuery<?> query, CriteriaBuilder cb) {
+        // TODO Auto-generated method stub
+        if (authorname != null || !authorname.isEmpty()) {
+            return cb.like(root.get("name"), authorname);
+        }
+        return null;
+    }
+
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<item key="replaceBarOpen" value="false"/>
+	<list key="replacehistory">
+		<item value="Long"/>
+		<item value="Auther"/>
+		<item value="author"/>
+		<item value="Author"/>
+		<item value="autherSearch"/>
+		<item value="bookRepo"/>
+		<item value="autherRepo"/>
+		<item value="T"/>
+		<item value="baseRepository"/>
+		<item value="bookService"/>
+		<item value="Book"/>
+		<item value="autherService"/>
+	</list>
+	<list key="searchhistory">
+		<item value="from"/>
+		<item value="&lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;"/>
+		<item value="handleMethodArgumentNotValid"/>
+		<item value="String"/>
+		<item value="Author"/>
+		<item value="auther"/>
+		<item value="Auther"/>
+		<item value="Authername"/>
+		<item value="AutherRrepo"/>
+		<item value="bookRrepo"/>
+		<item value="autherRrepo"/>
+		<item value="autherService"/>
+	</list>
+</section>

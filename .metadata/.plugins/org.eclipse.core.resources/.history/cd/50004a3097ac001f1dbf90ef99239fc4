@@ -1,0 +1,82 @@
+package com.example.book.entity;
+
+import com.example.book.validator.IpAddress;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Entity;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
+import com.example.book.base.BaseEntity;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
+import org.hibernate.annotations.Formula;
+import org.hibernate.annotations.SQLDelete;
+import org.hibernate.annotations.Where;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@SQLDelete(sql = "update authors set is_deleted = true where id = ?")
+@Where(clause = "is_deleted = false")
+@Entity
+@Table(name = "authors")
+public class Author extends BaseEntity<Long> {
+
+    @NotBlank(message = "author name cannot be blank")
+    @NotEmpty(message = "author name cannot be empty")
+    private String name;
+
+    @IpAddress(message = "should be entered a valid one")
+    private String ipAddress;
+
+    @Email
+    private String email;
+
+    @Formula("(select count(*) from books book where book.author_id = id")
+    private long bookCount;
+
+    @JsonManagedReference
+    @OneToMany(mappedBy = "author" , cascade = CascadeType.ALL)
+    private List<Book> books =new ArrayList<>();
+
+    public String getIpAddress() {
+        return ipAddress;
+    }
+
+    public void setIpAddress(String ipAddress) {
+        this.ipAddress = ipAddress;
+    }
+
+    public @Email String getEmail() {
+        return email;
+    }
+
+    public void setEmail(@Email String email) {
+        this.email = email;
+    }
+
+    public long getBookCount() {
+        return bookCount;
+    }
+
+    public void setBookCount(long bookCount) {
+        this.bookCount = bookCount;
+    }
+
+    public List<Book> getBooks() {
+        return books;
+    }
+
+    public void setBooks(List<Book> books) {
+        this.books = books;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}

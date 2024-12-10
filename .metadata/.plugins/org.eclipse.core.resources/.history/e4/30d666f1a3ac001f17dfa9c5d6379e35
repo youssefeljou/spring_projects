@@ -1,0 +1,57 @@
+package com.example.book.config;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
+
+import com.example.book.entity.Auther;
+import com.example.book.entity.Book;
+import com.example.book.service.AutherService;
+import com.example.book.service.BookService;
+
+@Component
+public class StartupApp implements CommandLineRunner {
+
+	@Autowired
+	private AutherService autherService;
+	
+	@Autowired
+	private BookService bookService;
+	
+	
+	@Override
+	public void run(String... args) throws Exception {
+		
+		Auther auther1= new Auther();
+		auther1.setName("Youssef");
+		
+		
+		Auther auther2= new Auther();
+		auther2.setName("Adel");
+		
+		Auther auther3= new Auther();
+		auther3.setName("Ahmed");
+		
+		autherService.insertAll(Arrays.asList(auther1,auther2,auther3));
+		
+		
+		Book book1=new Book();
+		book1.setName("jpa");
+		book1.setPrice(100);
+		book1.setAuther(auther1);
+		
+		Book book2=new Book();
+		book2.setName("jdbc");
+		book2.setPrice(200);
+		book2.setAuther(auther3);
+		
+		Book book3=new Book();
+		book3.setName("sql");
+		book3.setPrice(300);
+		book3.setAuther(auther3);
+	}
+
+}

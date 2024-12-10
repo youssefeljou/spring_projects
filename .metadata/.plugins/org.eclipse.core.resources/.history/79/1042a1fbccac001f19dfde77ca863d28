@@ -1,0 +1,43 @@
+package com.example.book.repository;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.EntityGraph;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.example.book.base.BaseRepository;
+import com.example.book.entity.Book;
+
+@Repository
+public interface BookRrepo extends BaseRepository<Book, Long> {
+
+	@Override
+	@EntityGraph(attributePaths = "auther")
+	Optional<Book> findById(Long id) ;
+	
+	/*
+	@Query("select book from Book book where id = :id")
+	Optional<Book> findByIdCustom(Long id) ;
+	*/
+	
+	@Override
+	@EntityGraph(attributePaths = {"auther"})
+	List<Book> findAll();
+	
+	@Transactional
+	@Modifying
+	@Query("delete from Book where auther.id = :id")
+	int deleteByAutherId(Long id);
+	
+	
+	@Override
+    @Modifying
+    @Transactional
+    @Query("UPDATE Book b SET b.statusCode = :statusCode WHERE b.id = :id")
+    void updateStatus(@Param("id") Long id, @Param("statusCode") String statusCode);
+}

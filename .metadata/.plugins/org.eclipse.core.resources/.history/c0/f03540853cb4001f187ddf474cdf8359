@@ -1,0 +1,131 @@
+package com.example.book.service;
+
+
+
+import java.util.List;
+import java.util.Optional;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.stereotype.Service;
+
+import com.example.book.base.BaseService;
+import com.example.book.entity.Auther;
+import com.example.book.entity.AutherSearch;
+import com.example.book.error.DuplicateRecordException;
+import com.example.book.repository.AutherRepo;
+import com.example.book.repository.AutherSpec;
+
+/**
+ * Service class for managing authors.
+ */
+@Service
+public class AutherService extends BaseService<Auther, Long> {
+
+    @Autowired
+    private AutherRepo autherRepo;
+
+    Logger log = LoggerFactory.getLogger(AutherService.class);
+
+    /**
+     * Finds an author by ID.
+     * @param id The ID of the author.
+     * @return The found author.
+     */
+    @Cacheable(value = "authersCache",key = "#root.methodName")
+    public Auther findById(Long id) {
+        return super.findById(id);
+    }
+
+    /**
+     * Gets an author by ID.
+     * @param id The ID of the author.
+     * @return The author.
+     */
+    public Auther getById(Long id) {
+        return super.getById(id);
+    }
+
+    /**
+     * Finds all authors.
+     * @return A list of all authors.
+     * @Cashable it cashed this method
+     */
+    @Cacheable(value = "authersCache",key = "#root.methodName")
+    public List<Auther> findAll() {
+        return super.findAll();
+    }
+
+    /**
+     * Inserts a new author.
+     * @param entity The author to insert.
+     * @return The inserted author.
+     * @Cashable it cashed this method
+     */
+    @CacheEvict(value = "authersCache",key = "#root.methodName")
+    public Auther insert(Auther entity) {
+        if (entity.getId() != null) {
+            throw new RuntimeException("ID must be null for new entities");
+        }
+        if (!entity.getEmail().isEmpty() && entity.getEmail() != null) {
+            log.info("Author Name is {} Author Email is {}", entity.getName(), entity.getEmail());
+            Optional<Auther> auther = findByEmail(entity.getEmail());
+            if (auther.isPresent()) {
+                log.error("This email :- " + entity.getEmail() + " is already found");
+                throw new DuplicateRecordException("This email :- " + entity.getEmail() + " is already found");
+            }
+        }
+        return super.insert(entity);
+    }
+
+    /**
+     * Inserts a list of authors.
+     * @param entity The list of authors to insert.
+     * @return The inserted authors.
+     */
+    public List<Auther> insertAll(List<Auther> entity) {
+        return super.insertAll(entity);
+    }
+
+    /**
+     * Updates an existing author.
+     * @param entity The author to update.
+     * @return The updated author.
+     */
+    public Auther update(Auther entity) {
+        Auther auther = findById(entity.getId());
+        auther.setName(entity.getName());
+        auther.setEmail(entity.getEmail());
+        return autherRepo.save(auther);
+    }
+
+    /**
+     * Finds authors based on search criteria.
+     * @param search The search criteria.
+     * @return A list of matching authors.
+     */
+    public List<Auther> findByAutherSpec(AutherSearch search) {
+        AutherSpec spec = new AutherSpec(search);
+        return autherRepo.findAll(spec);
+    }
+
+    /**
+     * Deletes an author by ID.
+     * @param id The ID of the author to delete.
+     */
+    public void deleteById(Long id) {
+        super.deleteById(id);
+    }
+
+    /**
+     * Finds an author by email.
+     * @param email The email of the author.
+     * @return An optional containing the author if found.
+     */
+    private Optional<Auther> findByEmail(String email) {
+        return autherRepo.findByEmail(email);
+    }
+}

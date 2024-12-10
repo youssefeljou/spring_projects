@@ -1,0 +1,73 @@
+package com.example.book.repository;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.data.jpa.domain.Specification;
+
+import com.example.book.entity.Auther;
+import com.example.book.entity.AutherSearch;
+import com.example.book.entity.Book;
+
+import jakarta.persistence.criteria.CriteriaBuilder;
+import jakarta.persistence.criteria.CriteriaQuery;
+import jakarta.persistence.criteria.Join;
+import jakarta.persistence.criteria.JoinType;
+import jakarta.persistence.criteria.Predicate;
+import jakarta.persistence.criteria.Root;
+
+public class AutherSpec implements Specification<Auther>{
+
+    private AutherSearch autherSearch;
+
+    public AutherSpec(AutherSearch autherSearch) {
+		super();
+		this.autherSearch = autherSearch;
+	}
+
+	@Override
+    public Predicate toPredicate(Root<Auther> root, CriteriaQuery<?> query, CriteriaBuilder cb) {
+        // TODO Auto-generated method stub
+    	List<Predicate> predicates= new ArrayList<>();
+    	
+    	Join<Auther, Book> bookJoin = root.join("books",JoinType.LEFT);
+    	
+    	//Auther Name
+    	
+        if (autherSearch.getAutherName() != null && !autherSearch.getAutherName().isEmpty()) {
+            predicates.add( cb.like(root.get("name"), autherSearch.getAutherName()));
+            
+        }
+        
+        //Auther Email
+    	
+        if (autherSearch.getEmail() != null && !autherSearch.getEmail().isEmpty()) {
+            predicates.add( cb.like(root.get("email"), autherSearch.getEmail()));
+            
+        }
+        
+        //Auther IpAddress
+    	
+        if (autherSearch.getIpAddress() != null && !autherSearch.getIpAddress().isEmpty()) {
+            predicates.add( cb.like(root.get("ipAddress"), autherSearch.getIpAddress()));
+            
+        }
+        
+        //Auther with book name
+    	
+        if (autherSearch.getBookName() != null && !autherSearch.getBookName().isEmpty()) {
+            predicates.add( cb.like(bookJoin.get("name"), autherSearch.getBookName()));
+            
+        }
+        
+        //Auther with book name
+    	
+        if (autherSearch.getPrice() != null) {
+            predicates.add( cb.like(bookJoin.get("name"), autherSearch.getBookName()));
+            
+        }
+        
+        return cb.and(predicates.toArray(new Predicate[0]));
+    }
+
+}
