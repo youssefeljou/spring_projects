@@ -1,0 +1,274 @@
+2024-12-20 16:36:03,141 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-12-20 16:36:03,381 INFO o.s.b.StartupInfoLogger [main] Starting JpaLibraryProject1Application using Java 21.0.5 with PID 15252 (D:\spring_projects\jpa-library-project\target\classes started by youss in D:\spring_projects\jpa-library-project)
+2024-12-20 16:36:03,383 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-12-20 16:36:06,293 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-20 16:36:06,321 DEBUG o.s.d.r.c.RepositoryConfigurationDelegate [main] Scanning for JPA repositories in packages com.example.book.
+2024-12-20 16:36:06,349 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider [main] Identified candidate component class: file [D:\spring_projects\jpa-library-project\target\classes\com\example\book\repository\AutherRepo.class]
+2024-12-20 16:36:06,352 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider [main] Identified candidate component class: file [D:\spring_projects\jpa-library-project\target\classes\com\example\book\repository\BookRepo.class]
+2024-12-20 16:36:06,451 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 126 ms. Found 2 JPA repository interfaces.
+2024-12-20 16:36:08,395 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-12-20 16:36:08,418 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-20 16:36:08,422 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-12-20 16:36:08,422 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-20 16:36:08,574 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-12-20 16:36:08,575 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4988 ms
+2024-12-20 16:36:09,227 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-12-20 16:36:10,477 WARN o.s.c.s.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08S01
+Error Code : 0
+Message    : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+
+2024-12-20 16:36:10,484 INFO o.a.j.l.DirectJDKLog [main] Stopping service [Tomcat]
+2024-12-20 16:36:10,528 INFO o.s.b.a.l.ConditionEvaluationReportLogger [main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-20 16:36:10,567 ERROR o.s.b.SpringApplication [main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08S01
+Error Code : 0
+Message    : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.example.book.JpaLibraryProject1Application.main(JpaLibraryProject1Application.java:20)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08S01
+Error Code : 0
+Message    : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:312)
+	... 10 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08S01
+Error Code : 0
+Message    : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:71)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:76)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:137)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:176)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1849)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1798)
+	... 17 common frames omitted
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:59)
+	... 23 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:142)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:961)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	... 34 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53)
+	... 37 common frames omitted
+2024-12-20 16:38:58,313 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-12-20 16:38:58,408 INFO o.s.b.StartupInfoLogger [main] Starting JpaLibraryProject1Application using Java 21.0.5 with PID 10948 (D:\spring_projects\jpa-library-project\target\classes started by youss in D:\spring_projects\jpa-library-project)
+2024-12-20 16:38:58,410 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-12-20 16:39:00,881 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-20 16:39:00,903 DEBUG o.s.d.r.c.RepositoryConfigurationDelegate [main] Scanning for JPA repositories in packages com.example.book.
+2024-12-20 16:39:00,921 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider [main] Identified candidate component class: file [D:\spring_projects\jpa-library-project\target\classes\com\example\book\repository\AutherRepo.class]
+2024-12-20 16:39:00,923 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider [main] Identified candidate component class: file [D:\spring_projects\jpa-library-project\target\classes\com\example\book\repository\BookRepo.class]
+2024-12-20 16:39:00,983 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 78 ms. Found 2 JPA repository interfaces.
+2024-12-20 16:39:02,417 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-12-20 16:39:02,438 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-20 16:39:02,441 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-12-20 16:39:02,442 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-20 16:39:02,558 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-12-20 16:39:02,559 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4071 ms
+2024-12-20 16:39:03,221 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-12-20 16:39:03,735 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20c283b4
+2024-12-20 16:39:03,739 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-12-20 16:39:03,807 INFO o.f.c.i.l.s.Slf4jLog [main] Database: jdbc:mysql://localhost:3306/book?createDatabaseIfNotExist=true (MySQL 8.0)
+2024-12-20 16:39:03,940 INFO o.f.c.i.l.s.Slf4jLog [main] Successfully validated 2 migrations (execution time 00:00.070s)
+2024-12-20 16:39:03,974 INFO o.f.c.i.l.s.Slf4jLog [main] Current version of schema `book`: 2
+2024-12-20 16:39:03,975 WARN o.f.c.i.l.s.Slf4jLog [main] Schema `book` has a version (2) that is newer than the latest available migration (1) !
+2024-12-20 16:39:03,982 INFO o.f.c.i.l.s.Slf4jLog [main] Schema `book` is up to date. No migration necessary.
+2024-12-20 16:39:04,153 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-20 16:39:04,260 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-20 16:39:04,314 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-12-20 16:39:04,718 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-20 16:39:04,803 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-20 16:39:04,804 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-20 16:39:04,824 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-20 16:39:06,235 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-20 16:39:06,311 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-20 16:39:06,610 DEBUG o.s.d.j.r.c.JpaMetamodelMappingContextFactoryBean [main] Initializing JpaMetamodelMappingContext…
+2024-12-20 16:39:06,632 DEBUG o.s.d.j.r.c.JpaMetamodelMappingContextFactoryBean [main] Finished initializing JpaMetamodelMappingContext
+2024-12-20 16:39:06,801 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Initializing repository instance for com.example.book.repository.AutherRepo…
+2024-12-20 16:39:06,912 DEBUG o.s.d.j.r.q.NamedQuery [main] Looking up named query Auther.findByEmail
+2024-12-20 16:39:06,917 DEBUG o.s.d.j.r.q.NamedQuery [main] Did not find named query Auther.findByEmail
+2024-12-20 16:39:07,003 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Finished creation of repository instance for com.example.book.repository.AutherRepo.
+2024-12-20 16:39:07,120 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Initializing repository instance for com.example.book.repository.BookRepo…
+2024-12-20 16:39:07,162 DEBUG o.s.d.j.r.q.NamedQuery [main] Did not find named query Book.deleteByAutherId.count
+2024-12-20 16:39:07,197 INFO o.s.d.j.r.q.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-20 16:39:07,837 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Finished creation of repository instance for com.example.book.repository.BookRepo.
+2024-12-20 16:39:08,518 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-20 16:39:10,352 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 16 endpoints beneath base path '/actuator'
+2024-12-20 16:39:10,471 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-12-20 16:39:10,510 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2024-12-20 16:39:10,535 INFO o.s.b.StartupInfoLogger [main] Started JpaLibraryProject1Application in 12.679 seconds (process running for 14.652)
+2024-12-20 16:39:10,567 INFO c.e.b.a.LoggingAspect [main] ====> Method Name is >> AutherService.findAll()
+2024-12-20 16:39:10,573 INFO c.e.b.a.LoggingAspect [main] ====> Method Name is >> AutherRepo.findAll()
+2024-12-20 16:39:11,117 DEBUG o.h.e.j.s.SqlStatementLogger [main] 
+    select
+        a1_0.id,
+        (select
+            count(*) 
+        from
+            books book 
+        where
+            book.auther_id = a1_0.id),
+        b1_0.auther_id,
+        b1_0.id,
+        (select
+            count(*) 
+        from
+            books),
+        b1_0.created_by,
+        b1_0.created_date,
+        b1_0.last_modified_by,
+        b1_0.last_modified_date,
+        b1_0.name,
+        b1_0.price,
+        b1_0.status,
+        a1_0.created_by,
+        a1_0.created_date,
+        a1_0.email,
+        a1_0.image_path,
+        a1_0.ip_address,
+        a1_0.last_modified_by,
+        a1_0.last_modified_date,
+        a1_0.name,
+        a1_0.status 
+    from
+        authers a1_0 
+    left join
+        books b1_0 
+            on a1_0.id=b1_0.auther_id
+2024-12-20 16:39:11,193 INFO c.e.b.a.LoggingAspect [main] ====> Method Name is >> BookRepo.findAll()
+2024-12-20 16:39:11,199 DEBUG o.h.e.j.s.SqlStatementLogger [main] 
+    select
+        b1_0.id,
+        b1_0.auther_id,
+        a1_0.id,
+        (select
+            count(*) 
+        from
+            books book 
+        where
+            book.auther_id = a1_0.id),
+        a1_0.created_by,
+        a1_0.created_date,
+        a1_0.email,
+        a1_0.image_path,
+        a1_0.ip_address,
+        a1_0.last_modified_by,
+        a1_0.last_modified_date,
+        a1_0.name,
+        a1_0.status,
+        (select
+            count(*) 
+        from
+            books),
+        b1_0.created_by,
+        b1_0.created_date,
+        b1_0.last_modified_by,
+        b1_0.last_modified_date,
+        b1_0.name,
+        b1_0.price,
+        b1_0.status 
+    from
+        books b1_0 
+    join
+        authers a1_0 
+            on a1_0.id=b1_0.auther_id
+2024-12-20 16:39:11,290 INFO c.e.b.a.LoggingAspect [ThreadPoolTaskExecutor-2] ====> Method Name is >> PriceSchedule.computePrice()
+2024-12-20 16:39:11,290 INFO c.e.b.a.LoggingAspect [ThreadPoolTaskExecutor-1] ====> Method Name is >> PriceSchedule.computeDiscount()
+2024-12-20 16:39:12,879 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(8)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-20 16:39:12,879 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(8)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2024-12-20 16:39:12,882 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(8)-127.0.0.1] Completed initialization in 2 ms
+2024-12-20 16:39:15,297 INFO c.e.b.s.PriceSchedule [ThreadPoolTaskExecutor-2] compute price >> 2024-12-20T16:39:15.294590800
+2024-12-20 16:39:15,297 INFO c.e.b.s.PriceSchedule [ThreadPoolTaskExecutor-1] compute discount >> 2024-12-20T16:39:15.294590800
+2024-12-20 16:40:11,660 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(9)-127.0.0.1] Application shutdown requested.
+2024-12-20 16:40:11,666 INFO o.s.b.w.e.t.GracefulShutdown [RMI TCP Connection(9)-127.0.0.1] Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-20 16:40:11,668 INFO o.a.j.l.DirectJDKLog [tomcat-shutdown] Pausing ProtocolHandler ["http-nio-8080"]
+2024-12-20 16:40:11,677 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2024-12-20 16:40:11,678 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(9)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8080"]
+2024-12-20 16:40:11,691 INFO o.s.o.j.AbstractEntityManagerFactoryBean [RMI TCP Connection(9)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-20 16:40:11,700 INFO c.z.h.HikariDataSource [RMI TCP Connection(9)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2024-12-20 16:40:11,732 INFO c.z.h.HikariDataSource [RMI TCP Connection(9)-127.0.0.1] HikariPool-1 - Shutdown completed.
