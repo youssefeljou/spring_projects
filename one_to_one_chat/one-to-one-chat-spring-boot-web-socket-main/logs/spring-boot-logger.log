@@ -1,0 +1,363 @@
+2024-12-26 01:53:53,647 INFO o.s.b.StartupInfoLogger [main] Starting ChatApplication using Java 17.0.13 with PID 18704 (D:\Spring_projects\one_to_one_chat\one-to-one-chat-spring-boot-web-socket-main\target\classes started by youss in D:\Spring_projects\one_to_one_chat\one-to-one-chat-spring-boot-web-socket-main)
+2024-12-26 01:53:53,664 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-12-26 01:53:55,575 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-12-26 01:53:55,750 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 159 ms. Found 3 MongoDB repository interfaces.
+2024-12-26 01:53:57,554 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8088 (http)
+2024-12-26 01:53:57,595 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8088"]
+2024-12-26 01:53:57,602 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-12-26 01:53:57,603 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-12-26 01:53:57,993 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-12-26 01:53:57,995 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4173 ms
+2024-12-26 01:53:58,748 INFO c.m.i.d.l.SLF4JLogger [main] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./17.0.13+11-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@1cf336fd, com.mongodb.Jep395RecordCodecProvider@1d0cac30]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-12-26 01:53:58,824 INFO c.m.i.d.l.SLF4JLogger [cluster-ClusterId{value='676c9b16ea78350a18e56cb7', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=77310701}
+2024-12-26 01:54:00,692 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
+2024-12-26 01:54:01,197 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8088"]
+2024-12-26 01:54:01,273 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8088 (http) with context path ''
+2024-12-26 01:54:01,275 INFO o.s.c.l.CompositeLog [main] Starting...
+2024-12-26 01:54:01,282 INFO o.s.c.l.CompositeLog [main] BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@21733cbe]]
+2024-12-26 01:54:01,283 INFO o.s.c.l.CompositeLog [main] Started.
+2024-12-26 01:54:01,304 INFO o.s.b.StartupInfoLogger [main] Started ChatApplication in 8.978 seconds (process running for 10.693)
+2024-12-26 01:54:41,370 INFO o.a.j.l.DirectJDKLog [http-nio-8088-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26 01:54:41,374 INFO o.s.w.s.FrameworkServlet [http-nio-8088-exec-3] Initializing Servlet 'dispatcherServlet'
+2024-12-26 01:54:41,381 INFO o.s.w.s.FrameworkServlet [http-nio-8088-exec-3] Completed initialization in 5 ms
+2024-12-26 01:55:00,381 INFO o.s.w.s.c.WebSocketMessageBrokerStats [MessageBroker-2] WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 1 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 8, active threads = 0, queued tasks = 0, completed tasks = 12], outboundChannel[pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 2], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 2, completed tasks = 3]
+2024-12-26 01:56:09,279 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] Stopping...
+2024-12-26 01:56:09,285 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@21733cbe]]
+2024-12-26 01:56:09,286 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] Stopped.
+2024-12-26 01:57:34,576 INFO o.s.b.StartupInfoLogger [main] Starting ChatApplication using Java 17.0.13 with PID 3864 (D:\Spring_projects\one_to_one_chat\one-to-one-chat-spring-boot-web-socket-main\target\classes started by youss in D:\Spring_projects\one_to_one_chat\one-to-one-chat-spring-boot-web-socket-main)
+2024-12-26 01:57:34,583 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-12-26 01:57:36,282 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-12-26 01:57:36,512 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 217 ms. Found 3 MongoDB repository interfaces.
+2024-12-26 01:57:37,933 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8088 (http)
+2024-12-26 01:57:37,956 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8088"]
+2024-12-26 01:57:37,964 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-12-26 01:57:37,965 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-12-26 01:57:38,257 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-12-26 01:57:38,258 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3494 ms
+2024-12-26 01:57:39,039 INFO c.m.i.d.l.SLF4JLogger [main] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./17.0.13+11-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@5b39a3e6, com.mongodb.Jep395RecordCodecProvider@5820070c]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-12-26 01:57:39,091 INFO c.m.i.d.l.SLF4JLogger [cluster-ClusterId{value='676c9bf2abae6f6cadff5071', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=49513299}
+2024-12-26 01:57:40,581 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
+2024-12-26 01:57:40,790 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8088"]
+2024-12-26 01:57:40,858 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8088 (http) with context path ''
+2024-12-26 01:57:40,861 INFO o.s.c.l.CompositeLog [main] Starting...
+2024-12-26 01:57:40,866 INFO o.s.c.l.CompositeLog [main] BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@634aa81e]]
+2024-12-26 01:57:40,867 INFO o.s.c.l.CompositeLog [main] Started.
+2024-12-26 01:57:40,884 INFO o.s.b.StartupInfoLogger [main] Started ChatApplication in 8.374 seconds (process running for 21.914)
+2024-12-26 01:58:42,967 INFO o.s.w.s.c.WebSocketMessageBrokerStats [MessageBroker-1] WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2024-12-26 01:59:13,484 INFO o.a.j.l.DirectJDKLog [http-nio-8088-exec-4] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26 01:59:13,486 INFO o.s.w.s.FrameworkServlet [http-nio-8088-exec-4] Initializing Servlet 'dispatcherServlet'
+2024-12-26 01:59:13,503 INFO o.s.w.s.FrameworkServlet [http-nio-8088-exec-4] Completed initialization in 17 ms
+2024-12-26 01:59:28,619 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] Stopping...
+2024-12-26 01:59:28,619 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@634aa81e]]
+2024-12-26 01:59:28,624 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] Stopped.
+2024-12-26 01:59:35,954 INFO o.s.b.StartupInfoLogger [main] Starting ChatApplication using Java 17.0.13 with PID 17284 (D:\Spring_projects\one_to_one_chat\one-to-one-chat-spring-boot-web-socket-main\target\classes started by youss in D:\Spring_projects\one_to_one_chat\one-to-one-chat-spring-boot-web-socket-main)
+2024-12-26 01:59:35,960 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-12-26 01:59:37,508 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-12-26 01:59:37,667 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 147 ms. Found 3 MongoDB repository interfaces.
+2024-12-26 01:59:38,999 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8088 (http)
+2024-12-26 01:59:39,022 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8088"]
+2024-12-26 01:59:39,029 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-12-26 01:59:39,029 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-12-26 01:59:39,323 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-12-26 01:59:39,325 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3213 ms
+2024-12-26 01:59:39,847 INFO c.m.i.d.l.SLF4JLogger [main] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./17.0.13+11-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@557b6a37, com.mongodb.Jep395RecordCodecProvider@11b32a14]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-12-26 01:59:39,887 INFO c.m.i.d.l.SLF4JLogger [cluster-ClusterId{value='676c9c6b60af8161d4dd94c3', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=38817300}
+2024-12-26 01:59:41,398 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
+2024-12-26 01:59:41,639 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8088"]
+2024-12-26 01:59:41,721 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8088 (http) with context path ''
+2024-12-26 01:59:41,724 INFO o.s.c.l.CompositeLog [main] Starting...
+2024-12-26 01:59:41,730 INFO o.s.c.l.CompositeLog [main] BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@23f60b7d]]
+2024-12-26 01:59:41,731 INFO o.s.c.l.CompositeLog [main] Started.
+2024-12-26 01:59:41,747 INFO o.s.b.StartupInfoLogger [main] Started ChatApplication in 6.729 seconds (process running for 8.117)
+2024-12-26 02:00:41,199 INFO o.s.w.s.c.WebSocketMessageBrokerStats [MessageBroker-1] WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2024-12-26 02:19:05,918 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] Stopping...
+2024-12-26 02:19:05,987 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@23f60b7d]]
+2024-12-26 02:19:05,993 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] Stopped.
+2024-12-26 02:31:43,910 INFO o.s.b.StartupInfoLogger [main] Starting ChatApplication using Java 17.0.13 with PID 13480 (D:\Spring_projects\one_to_one_chat\one-to-one-chat-spring-boot-web-socket-main\target\classes started by youss in D:\Spring_projects\one_to_one_chat\one-to-one-chat-spring-boot-web-socket-main)
+2024-12-26 02:31:43,917 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-12-26 02:31:47,359 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-12-26 02:31:47,468 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 99 ms. Found 3 MongoDB repository interfaces.
+2024-12-26 02:31:48,769 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8088 (http)
+2024-12-26 02:31:48,782 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8088"]
+2024-12-26 02:31:48,786 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-12-26 02:31:48,787 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-12-26 02:31:48,993 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-12-26 02:31:48,995 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4827 ms
+2024-12-26 02:31:49,393 INFO c.m.i.d.l.SLF4JLogger [main] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./17.0.13+11-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@718f805a, com.mongodb.Jep395RecordCodecProvider@e09f1b6]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-12-26 02:31:49,435 INFO c.m.i.d.l.SLF4JLogger [cluster-ClusterId{value='676ca3f505f8146773844e2c', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=40025600}
+2024-12-26 02:31:50,527 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
+2024-12-26 02:31:50,704 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8088"]
+2024-12-26 02:31:50,755 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8088 (http) with context path ''
+2024-12-26 02:31:50,758 INFO o.s.c.l.CompositeLog [main] Starting...
+2024-12-26 02:31:50,771 INFO o.s.c.l.CompositeLog [main] BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5c5a91b4]]
+2024-12-26 02:31:50,773 INFO o.s.c.l.CompositeLog [main] Started.
+2024-12-26 02:31:50,788 INFO o.s.b.StartupInfoLogger [main] Started ChatApplication in 18.224 seconds (process running for 25.189)
+2024-12-26 02:32:50,331 INFO o.s.w.s.c.WebSocketMessageBrokerStats [MessageBroker-1] WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2024-12-26 02:33:23,790 INFO o.a.j.l.DirectJDKLog [http-nio-8088-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26 02:33:23,791 INFO o.s.w.s.FrameworkServlet [http-nio-8088-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-12-26 02:33:23,862 INFO o.s.w.s.FrameworkServlet [http-nio-8088-exec-1] Completed initialization in 69 ms
+2024-12-26 02:35:00,865 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] Stopping...
+2024-12-26 02:35:00,872 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5c5a91b4]]
+2024-12-26 02:35:00,879 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] Stopped.
+2024-12-26 02:35:43,708 INFO o.s.b.StartupInfoLogger [main] Starting ChatApplication using Java 17.0.13 with PID 704 (D:\Spring_projects\one_to_one_chat\one-to-one-chat-spring-boot-web-socket-main\target\classes started by youss in D:\Spring_projects\one_to_one_chat\one-to-one-chat-spring-boot-web-socket-main)
+2024-12-26 02:35:43,717 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-12-26 02:35:45,285 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-12-26 02:35:45,545 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 247 ms. Found 3 MongoDB repository interfaces.
+2024-12-26 02:35:46,956 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8088 (http)
+2024-12-26 02:35:46,979 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8088"]
+2024-12-26 02:35:46,991 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-12-26 02:35:46,992 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-12-26 02:35:47,280 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-12-26 02:35:47,281 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3424 ms
+2024-12-26 02:35:47,893 INFO c.m.i.d.l.SLF4JLogger [main] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./17.0.13+11-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@53d2d002, com.mongodb.Jep395RecordCodecProvider@5b39a3e6]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-12-26 02:35:47,938 INFO c.m.i.d.l.SLF4JLogger [cluster-ClusterId{value='676ca4e3ea2f131bcb8f826b', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=39223700}
+2024-12-26 02:35:49,487 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
+2024-12-26 02:35:49,692 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8088"]
+2024-12-26 02:35:49,757 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8088 (http) with context path ''
+2024-12-26 02:35:49,760 INFO o.s.c.l.CompositeLog [main] Starting...
+2024-12-26 02:35:49,765 INFO o.s.c.l.CompositeLog [main] BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@70f4f89e]]
+2024-12-26 02:35:49,766 INFO o.s.c.l.CompositeLog [main] Started.
+2024-12-26 02:35:49,781 INFO o.s.b.StartupInfoLogger [main] Started ChatApplication in 7.084 seconds (process running for 8.839)
+2024-12-26 02:36:49,169 INFO o.s.w.s.c.WebSocketMessageBrokerStats [MessageBroker-1] WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2024-12-26 02:41:39,616 INFO o.a.j.l.DirectJDKLog [http-nio-8088-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26 02:41:39,631 INFO o.s.w.s.FrameworkServlet [http-nio-8088-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-12-26 02:41:39,765 INFO o.s.w.s.FrameworkServlet [http-nio-8088-exec-1] Completed initialization in 133 ms
+2024-12-26 02:43:51,007 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] Stopping...
+2024-12-26 02:43:51,009 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@70f4f89e]]
+2024-12-26 02:43:51,009 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] Stopped.
+2024-12-26 02:52:59,693 INFO o.s.b.StartupInfoLogger [main] Starting ChatApplication using Java 17.0.13 with PID 17460 (D:\Spring_projects\one_to_one_chat\one-to-one-chat-spring-boot-web-socket-main\target\classes started by youss in D:\Spring_projects\one_to_one_chat\one-to-one-chat-spring-boot-web-socket-main)
+2024-12-26 02:52:59,700 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-12-26 02:53:01,439 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-12-26 02:53:01,589 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 137 ms. Found 3 MongoDB repository interfaces.
+2024-12-26 02:53:03,006 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8088 (http)
+2024-12-26 02:53:03,047 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8088"]
+2024-12-26 02:53:03,056 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-12-26 02:53:03,056 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-12-26 02:53:03,346 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-12-26 02:53:03,347 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3342 ms
+2024-12-26 02:53:03,928 INFO c.m.i.d.l.SLF4JLogger [main] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./17.0.13+11-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@5820070c, com.mongodb.Jep395RecordCodecProvider@34208baa]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-12-26 02:53:04,346 INFO c.m.i.d.l.SLF4JLogger [cluster-ClusterId{value='676ca8ef6b419e47d3965e71', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=80621001}
+2024-12-26 02:53:05,666 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
+2024-12-26 02:53:05,895 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8088"]
+2024-12-26 02:53:05,952 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8088 (http) with context path ''
+2024-12-26 02:53:05,955 INFO o.s.c.l.CompositeLog [main] Starting...
+2024-12-26 02:53:05,967 INFO o.s.c.l.CompositeLog [main] BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2bb717d7]]
+2024-12-26 02:53:05,971 INFO o.s.c.l.CompositeLog [main] Started.
+2024-12-26 02:53:06,003 INFO o.s.b.StartupInfoLogger [main] Started ChatApplication in 7.242 seconds (process running for 8.846)
+2024-12-26 02:54:05,378 INFO o.s.w.s.c.WebSocketMessageBrokerStats [MessageBroker-1] WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2024-12-26 02:55:21,346 INFO o.a.j.l.DirectJDKLog [http-nio-8088-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26 02:55:21,352 INFO o.s.w.s.FrameworkServlet [http-nio-8088-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-12-26 02:55:21,433 INFO o.s.w.s.FrameworkServlet [http-nio-8088-exec-1] Completed initialization in 81 ms
+2024-12-26 02:55:25,582 ERROR o.s.m.h.i.AbstractMethodMessageHandler [clientInboundChannel-3] Unhandled exception from message handler method
+org.springframework.messaging.converter.MessageConversionException: Could not read JSON: Cannot construct instance of `com.websocket.user.User` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (byte[])"{"nickName":"eljoker","fullName":"youssef","status":"ONLINE"}"; line: 1, column: 2]
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:235)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:185)
+	at org.springframework.messaging.converter.CompositeMessageConverter.fromMessage(CompositeMessageConverter.java:70)
+	at org.springframework.messaging.handler.annotation.support.PayloadMethodArgumentResolver.resolveArgument(PayloadMethodArgumentResolver.java:144)
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:118)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:147)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:115)
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMatch(AbstractMethodMessageHandler.java:567)
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:511)
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:93)
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessageInternal(AbstractMethodMessageHandler.java:522)
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessage(AbstractMethodMessageHandler.java:457)
+	at org.springframework.messaging.support.ExecutorSubscribableChannel$SendTask.run(ExecutorSubscribableChannel.java:144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.websocket.user.User` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (byte[])"{"nickName":"eljoker","fullName":"youssef","status":"ONLINE"}"; line: 1, column: 2]
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1915)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:414)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1360)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1424)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:352)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:185)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4825)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3866)
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:221)
+	... 15 common frames omitted
+2024-12-26 02:56:04,448 ERROR o.s.m.h.i.AbstractMethodMessageHandler [clientInboundChannel-4] Unhandled exception from message handler method
+org.springframework.messaging.converter.MessageConversionException: Could not read JSON: Cannot construct instance of `com.websocket.user.User` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (byte[])"{"nickName":"eljoker","fullName":"youssef","status":"OFFLINE"}"; line: 1, column: 2]
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:235)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:185)
+	at org.springframework.messaging.converter.CompositeMessageConverter.fromMessage(CompositeMessageConverter.java:70)
+	at org.springframework.messaging.handler.annotation.support.PayloadMethodArgumentResolver.resolveArgument(PayloadMethodArgumentResolver.java:144)
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:118)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:147)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:115)
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMatch(AbstractMethodMessageHandler.java:567)
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:511)
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:93)
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessageInternal(AbstractMethodMessageHandler.java:522)
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessage(AbstractMethodMessageHandler.java:457)
+	at org.springframework.messaging.support.ExecutorSubscribableChannel$SendTask.run(ExecutorSubscribableChannel.java:144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.websocket.user.User` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (byte[])"{"nickName":"eljoker","fullName":"youssef","status":"OFFLINE"}"; line: 1, column: 2]
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1915)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:414)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1360)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1424)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:352)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:185)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4825)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3866)
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:221)
+	... 15 common frames omitted
+2024-12-26 02:57:01,163 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] Stopping...
+2024-12-26 02:57:01,183 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2bb717d7]]
+2024-12-26 02:57:01,186 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] Stopped.
+2024-12-26 02:59:08,362 INFO o.s.b.StartupInfoLogger [main] Starting ChatApplication using Java 17.0.13 with PID 14472 (D:\Spring_projects\one_to_one_chat\one-to-one-chat-spring-boot-web-socket-main\target\classes started by youss in D:\Spring_projects\one_to_one_chat\one-to-one-chat-spring-boot-web-socket-main)
+2024-12-26 02:59:08,370 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-12-26 02:59:10,195 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-12-26 02:59:10,411 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 200 ms. Found 3 MongoDB repository interfaces.
+2024-12-26 02:59:11,848 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8088 (http)
+2024-12-26 02:59:11,870 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8088"]
+2024-12-26 02:59:11,877 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-12-26 02:59:11,878 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-12-26 02:59:12,179 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-12-26 02:59:12,180 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3588 ms
+2024-12-26 02:59:12,807 INFO c.m.i.d.l.SLF4JLogger [main] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./17.0.13+11-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@59edb4f5, com.mongodb.Jep395RecordCodecProvider@2792b416]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-12-26 02:59:12,859 INFO c.m.i.d.l.SLF4JLogger [cluster-ClusterId{value='676caa60322ab22983bfc244', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=45332101}
+2024-12-26 02:59:19,035 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
+2024-12-26 02:59:20,116 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8088"]
+2024-12-26 02:59:21,349 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8088 (http) with context path ''
+2024-12-26 02:59:21,354 INFO o.s.c.l.CompositeLog [main] Starting...
+2024-12-26 02:59:21,361 INFO o.s.c.l.CompositeLog [main] BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@25a290ee]]
+2024-12-26 02:59:21,363 INFO o.s.c.l.CompositeLog [main] Started.
+2024-12-26 02:59:21,411 INFO o.s.b.StartupInfoLogger [main] Started ChatApplication in 14.072 seconds (process running for 17.461)
+2024-12-26 02:59:40,320 INFO o.a.j.l.DirectJDKLog [http-nio-8088-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26 02:59:40,321 INFO o.s.w.s.FrameworkServlet [http-nio-8088-exec-3] Initializing Servlet 'dispatcherServlet'
+2024-12-26 02:59:40,323 INFO o.s.w.s.FrameworkServlet [http-nio-8088-exec-3] Completed initialization in 2 ms
+2024-12-26 02:59:40,626 ERROR o.s.m.h.i.AbstractMethodMessageHandler [clientInboundChannel-3] Unhandled exception from message handler method
+org.springframework.messaging.converter.MessageConversionException: Could not read JSON: Cannot construct instance of `com.websocket.user.User` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (byte[])"{"nickName":"eljoker","fullName":"youssef","status":"ONLINE"}"; line: 1, column: 2]
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:235)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:185)
+	at org.springframework.messaging.converter.CompositeMessageConverter.fromMessage(CompositeMessageConverter.java:70)
+	at org.springframework.messaging.handler.annotation.support.PayloadMethodArgumentResolver.resolveArgument(PayloadMethodArgumentResolver.java:144)
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:118)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:147)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:115)
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMatch(AbstractMethodMessageHandler.java:567)
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:511)
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:93)
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessageInternal(AbstractMethodMessageHandler.java:522)
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessage(AbstractMethodMessageHandler.java:457)
+	at org.springframework.messaging.support.ExecutorSubscribableChannel$SendTask.run(ExecutorSubscribableChannel.java:144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.websocket.user.User` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (byte[])"{"nickName":"eljoker","fullName":"youssef","status":"ONLINE"}"; line: 1, column: 2]
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1915)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:414)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1360)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1424)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:352)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:185)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4825)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3866)
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:221)
+	... 15 common frames omitted
+2024-12-26 02:59:46,120 ERROR o.s.m.h.i.AbstractMethodMessageHandler [clientInboundChannel-2] Unhandled exception from message handler method
+org.springframework.messaging.converter.MessageConversionException: Could not read JSON: Cannot construct instance of `com.websocket.user.User` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (byte[])"{"nickName":"eljoker","fullName":"youssef","status":"OFFLINE"}"; line: 1, column: 2]
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:235)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:185)
+	at org.springframework.messaging.converter.CompositeMessageConverter.fromMessage(CompositeMessageConverter.java:70)
+	at org.springframework.messaging.handler.annotation.support.PayloadMethodArgumentResolver.resolveArgument(PayloadMethodArgumentResolver.java:144)
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:118)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:147)
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:115)
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMatch(AbstractMethodMessageHandler.java:567)
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:511)
+	at org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler.handleMatch(SimpAnnotationMethodMessageHandler.java:93)
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessageInternal(AbstractMethodMessageHandler.java:522)
+	at org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler.handleMessage(AbstractMethodMessageHandler.java:457)
+	at org.springframework.messaging.support.ExecutorSubscribableChannel$SendTask.run(ExecutorSubscribableChannel.java:144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.websocket.user.User` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (byte[])"{"nickName":"eljoker","fullName":"youssef","status":"OFFLINE"}"; line: 1, column: 2]
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1915)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:414)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1360)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1424)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:352)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:185)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4825)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3866)
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:221)
+	... 15 common frames omitted
+2024-12-26 03:00:16,597 INFO o.s.w.s.c.WebSocketMessageBrokerStats [MessageBroker-1] WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 1 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 8, active threads = 0, queued tasks = 0, completed tasks = 18], outboundChannel[pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 2], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 1, completed tasks = 8]
+2024-12-26 03:01:21,419 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] Stopping...
+2024-12-26 03:01:21,426 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@25a290ee]]
+2024-12-26 03:01:21,427 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] Stopped.
+2024-12-26 03:05:54,770 INFO o.s.b.StartupInfoLogger [main] Starting ChatApplication using Java 17.0.13 with PID 19992 (D:\Spring_projects\one_to_one_chat\one-to-one-chat-spring-boot-web-socket-main\target\classes started by youss in D:\Spring_projects\one_to_one_chat\one-to-one-chat-spring-boot-web-socket-main)
+2024-12-26 03:05:54,779 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-12-26 03:05:58,770 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-12-26 03:06:00,269 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 1361 ms. Found 3 MongoDB repository interfaces.
+2024-12-26 03:06:09,666 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8088 (http)
+2024-12-26 03:06:09,688 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8088"]
+2024-12-26 03:06:09,697 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-12-26 03:06:09,698 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-12-26 03:06:10,178 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-12-26 03:06:10,191 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 15271 ms
+2024-12-26 03:06:10,831 INFO c.m.i.d.l.SLF4JLogger [main] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./17.0.13+11-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@75cf0de5, com.mongodb.Jep395RecordCodecProvider@50b0afd7]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-12-26 03:06:10,900 INFO c.m.i.d.l.SLF4JLogger [cluster-ClusterId{value='676cac0225ce3943264d0fe1', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=49703500}
+2024-12-26 03:06:12,607 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
+2024-12-26 03:06:12,849 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8088"]
+2024-12-26 03:06:12,919 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8088 (http) with context path ''
+2024-12-26 03:06:12,924 INFO o.s.c.l.CompositeLog [main] Starting...
+2024-12-26 03:06:12,931 INFO o.s.c.l.CompositeLog [main] BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@4052913c]]
+2024-12-26 03:06:12,932 INFO o.s.c.l.CompositeLog [main] Started.
+2024-12-26 03:06:12,949 INFO o.s.b.StartupInfoLogger [main] Started ChatApplication in 23.2 seconds (process running for 30.004)
+2024-12-26 03:06:33,193 INFO o.a.j.l.DirectJDKLog [http-nio-8088-exec-4] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26 03:06:33,194 INFO o.s.w.s.FrameworkServlet [http-nio-8088-exec-4] Initializing Servlet 'dispatcherServlet'
+2024-12-26 03:06:33,196 INFO o.s.w.s.FrameworkServlet [http-nio-8088-exec-4] Completed initialization in 2 ms
+2024-12-26 03:07:12,336 INFO o.s.w.s.c.WebSocketMessageBrokerStats [MessageBroker-1] WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 1 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 8, active threads = 0, queued tasks = 0, completed tasks = 12], outboundChannel[pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 2], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 2, completed tasks = 8]
+2024-12-26 03:07:40,305 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] Stopping...
+2024-12-26 03:07:40,306 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@4052913c]]
+2024-12-26 03:07:40,306 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] Stopped.
+2024-12-26 15:10:43,026 INFO o.s.b.StartupInfoLogger [main] Starting ChatApplication using Java 17.0.13 with PID 7276 (D:\Spring_projects\one_to_one_chat\one-to-one-chat-spring-boot-web-socket-main\target\classes started by youss in D:\Spring_projects\one_to_one_chat\one-to-one-chat-spring-boot-web-socket-main)
+2024-12-26 15:10:43,034 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-12-26 15:10:44,828 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-12-26 15:10:45,014 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 172 ms. Found 3 MongoDB repository interfaces.
+2024-12-26 15:10:46,747 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8088 (http)
+2024-12-26 15:10:46,775 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8088"]
+2024-12-26 15:10:46,815 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-12-26 15:10:46,820 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-12-26 15:10:47,362 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-12-26 15:10:47,366 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4117 ms
+2024-12-26 15:10:47,918 INFO c.m.i.d.l.SLF4JLogger [main] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./17.0.13+11-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@104dc1a2, com.mongodb.Jep395RecordCodecProvider@67d32a54]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-12-26 15:10:48,172 INFO c.m.i.d.l.SLF4JLogger [cluster-ClusterId{value='676d55d7e56f8a0401bbff59', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=163521600}
+2024-12-26 15:10:49,623 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
+2024-12-26 15:10:49,859 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8088"]
+2024-12-26 15:10:49,938 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8088 (http) with context path ''
+2024-12-26 15:10:49,943 INFO o.s.c.l.CompositeLog [main] Starting...
+2024-12-26 15:10:49,949 INFO o.s.c.l.CompositeLog [main] BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@743bb39a]]
+2024-12-26 15:10:49,951 INFO o.s.c.l.CompositeLog [main] Started.
+2024-12-26 15:10:49,968 INFO o.s.b.StartupInfoLogger [main] Started ChatApplication in 8.0 seconds (process running for 15.203)
+2024-12-26 15:11:29,910 INFO o.a.j.l.DirectJDKLog [http-nio-8088-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26 15:11:29,913 INFO o.s.w.s.FrameworkServlet [http-nio-8088-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-12-26 15:11:29,925 INFO o.s.w.s.FrameworkServlet [http-nio-8088-exec-1] Completed initialization in 11 ms
+2024-12-26 15:11:49,303 INFO o.s.w.s.c.WebSocketMessageBrokerStats [MessageBroker-4] WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 1 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 8, active threads = 0, queued tasks = 0, completed tasks = 12], outboundChannel[pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 2], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 2, completed tasks = 3]
+2024-12-26 15:12:45,585 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] Stopping...
+2024-12-26 15:12:45,587 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@743bb39a]]
+2024-12-26 15:12:45,588 INFO o.s.c.l.CompositeLog [SpringApplicationShutdownHook] Stopped.
