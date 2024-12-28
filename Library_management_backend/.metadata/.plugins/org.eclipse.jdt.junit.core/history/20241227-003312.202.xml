@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AutherRepoTest" project="jpa-library-project" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="com.example.book.repository.AutherRepoTest" time="0.082" displayname="AutherRepoTest" uniqueid="[engine:junit-jupiter]/[class:com.example.book.repository.AutherRepoTest]">
+    <testcase name="findByEmailNotFoundTest" classname="com.example.book.repository.AutherRepoTest" time="0.082" displayname="findByEmailNotFoundTest()" uniqueid="[engine:junit-jupiter]/[class:com.example.book.repository.AutherRepoTest]/[method:findByEmailNotFoundTest()]">
+      <error>java.lang.NullPointerException: Cannot invoke "com.example.book.repository.AutherRepo.findByEmail(String)" because "this.autherRepo" is null&#13;
+	at com.example.book.repository.AutherRepoTest.findByEmailNotFoundTest(AutherRepoTest.java:19)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

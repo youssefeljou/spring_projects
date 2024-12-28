@@ -1,0 +1,24 @@
+package com.example.book.service;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.Optional;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.example.book.entity.Auther;
+
+public class AutherServiceTest {
+
+	@Autowired
+	private AutherService autherService;
+	
+	@Test
+	void findByEmailNotFoundServiceTest()
+	{
+		Optional<Auther> auther=autherService.findByEmail("eljoker@gmail.com");
+		assertEquals(false, auther.isPresent());
+		
+	}
+}

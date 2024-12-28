@@ -17,11 +17,13 @@ import jakarta.validation.Valid;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j2;
 
 @Validated
 @RestController
 @RequestMapping("/auther")
 @RequiredArgsConstructor
+@Log4j2
 public class AutherController {
 
     private final AutherService autherService;
@@ -67,7 +69,7 @@ public class AutherController {
     @Operation(summary = "Insert author with request body parameters")
     @PostMapping("")
     public ResponseEntity<?> insert(@RequestBody @Valid AutherDto autherDto) {
-    	
+    	log.info("Received AutherDto: {}", autherDto);
         Auther auther=autherMapper.mapToEntity(autherDto);
     	
         Auther entity=autherService.insert(auther);

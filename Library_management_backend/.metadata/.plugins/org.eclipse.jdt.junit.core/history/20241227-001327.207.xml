@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="JpaLibraryProject1ApplicationTests" project="jpa-library-project" tests="2" started="2" failures="0" errors="2" ignored="0">
+  <testsuite name="com.example.book.JpaLibraryProject1ApplicationTests" time="0.001" displayname="JpaLibraryProject1ApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.example.book.JpaLibraryProject1ApplicationTests]">
+    <testcase name="findByEmailNotFoundTest" classname="com.example.book.JpaLibraryProject1ApplicationTests" time="0.0" displayname="findByEmailNotFoundTest()" uniqueid="[engine:junit-jupiter]/[class:com.example.book.JpaLibraryProject1ApplicationTests]/[method:findByEmailNotFoundTest()]">
+      <error>org.junit.jupiter.api.extension.ParameterResolutionException: No ParameterResolver registered for parameter [final com.example.book.service.AutherService autherService] in constructor [public com.example.book.JpaLibraryProject1ApplicationTests(com.example.book.service.AutherService)].&#13;
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="contextLoads" classname="com.example.book.JpaLibraryProject1ApplicationTests" time="0.001" displayname="contextLoads()" uniqueid="[engine:junit-jupiter]/[class:com.example.book.JpaLibraryProject1ApplicationTests]/[method:contextLoads()]">
+      <error>org.junit.jupiter.api.extension.ParameterResolutionException: No ParameterResolver registered for parameter [final com.example.book.service.AutherService autherService] in constructor [public com.example.book.JpaLibraryProject1ApplicationTests(com.example.book.service.AutherService)].&#13;
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

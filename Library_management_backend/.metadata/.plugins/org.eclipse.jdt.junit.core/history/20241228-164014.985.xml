@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AutherControllerTest" project="jpa-library-project" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="com.example.book.controller.AutherControllerTest" time="2.351" displayname="AutherControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.example.book.controller.AutherControllerTest]">
+    <testcase name="findByEmailFoundTest" classname="com.example.book.controller.AutherControllerTest" time="2.351" displayname="findByEmailFoundTest()" uniqueid="[engine:junit-jupiter]/[class:com.example.book.controller.AutherControllerTest]/[method:findByEmailFoundTest()]">
+      <failure>
+        <expected>200</expected>
+        <actual>200 OK</actual>
+        org.opentest4j.AssertionFailedError: &#13;
+expected: 200&#13;
+ but was: 200 OK&#13;
+	at com.example.book.controller.AutherControllerTest.findByEmailFoundTest(AutherControllerTest.java:26)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+  </testsuite>
+</testrun>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="JpaLibraryProject1ApplicationTests" project="jpa-library-project" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="com.example.book.JpaLibraryProject1ApplicationTests" time="8.632" displayname="JpaLibraryProject1ApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.example.book.JpaLibraryProject1ApplicationTests]">
+    <testcase name="findByEmailNotFoundServiceTest" classname="com.example.book.JpaLibraryProject1ApplicationTests" time="8.633" displayname="findByEmailNotFoundServiceTest()" uniqueid="[engine:junit-jupiter]/[class:com.example.book.JpaLibraryProject1ApplicationTests]/[method:findByEmailNotFoundServiceTest()]">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The method findByEmail(String) is undefined for the type AutherService
+&#13;
+	at com.example.book.JpaLibraryProject1ApplicationTests.findByEmailNotFoundServiceTest(JpaLibraryProject1ApplicationTests.java:29)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="contextLoads" classname="com.example.book.JpaLibraryProject1ApplicationTests" time="0.0" displayname="contextLoads()" uniqueid="[engine:junit-jupiter]/[class:com.example.book.JpaLibraryProject1ApplicationTests]/[method:contextLoads()]"/>
+  </testsuite>
+</testrun>

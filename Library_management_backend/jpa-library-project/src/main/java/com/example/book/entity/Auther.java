@@ -1,5 +1,6 @@
 package com.example.book.entity;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,12 +8,15 @@ import org.hibernate.annotations.Formula;
 
 import com.example.book.base.BaseEntity;
 import com.example.book.validator.IpAddress;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -29,6 +33,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class Auther extends BaseEntity<Long> {
 
+
     @Formula("(select count(*) from books book where book.auther_id = id)")
     private long bookCount;
 
@@ -38,9 +43,11 @@ public class Auther extends BaseEntity<Long> {
     @Email(message = "Invalid email format")
     private String email;
 
-    @JsonManagedReference
+    @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class , property = "id")
     @OneToMany(mappedBy = "auther")
     private List<Book> books = new ArrayList<>();
 
     private String imagePath;
+    
+    
 }

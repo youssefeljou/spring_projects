@@ -1,0 +1,22 @@
+package com.example.book.service;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.Optional;
+
+import org.junit.jupiter.api.Test;
+
+import com.example.book.entity.Auther;
+
+public class AutherServiceTest {
+
+	
+	
+	@Test
+	void findByEmailNotFoundServiceTest()
+	{
+		Optional<Auther> auther=autherService.findByEmail("eljoker@gmail.com");
+		assertEquals(false, auther.isPresent());
+		
+	}
+}
