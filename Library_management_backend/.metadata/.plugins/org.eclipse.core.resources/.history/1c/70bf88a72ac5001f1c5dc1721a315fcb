@@ -1,0 +1,42 @@
+package com.example.book.controller;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import com.example.book.dto.AutherDto;
+
+@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
+public class AutherControllerTest {
+
+	@Autowired
+	private TestRestTemplate restTemplate;
+	
+	@Test
+	public void findByEmailFoundTest()
+	{
+		String email="john.doe@example.com";
+		ResponseEntity<AutherDto> responseEntity= restTemplate.getForEntity("/auther/email/{email}", AutherDto.class,  email);
+		assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
+		
+		//assertEquals(HttpStatus.SC_OK, responseEntity.getStatusCode());
+		//assertThat(responseEntity.getBody()).isEqualTo("OK");
+	}
+	@Test
+	public void findByEmailNotFoundTest()
+	{
+		String email="john@example.com";
+		ResponseEntity<AutherDto> responseEntity= restTemplate.getForEntity("/auther/email/{email}", AutherDto.class,  email);
+		assertThat(responseEntity.getStatusCode()).isNotEqualTo(HttpStatus.NOT_FOUND);
+		
+		//assertEquals(HttpStatus.SC_OK, responseEntity.getStatusCode());
+		//assertThat(responseEntity.getBody()).isEqualTo("OK");
+	}
+}

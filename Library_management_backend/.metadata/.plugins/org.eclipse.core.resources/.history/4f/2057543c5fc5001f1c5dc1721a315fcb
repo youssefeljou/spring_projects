@@ -1,0 +1,47 @@
+package com.example.book.service;
+
+import java.util.Optional;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import com.example.book.entity.Auther;
+import com.example.book.repository.AutherRepo;
+
+
+@SpringBootTest
+public class AutherServiceTest {
+
+	@Autowired
+	private AutherService autherService;
+	
+	@MockBean
+	private AutherRepo autherRepo;
+	
+	@Test
+	void findByEmailNotFoundServiceTest()
+	{
+		Optional<Auther> autherParam= Optional.of(new Auther("youssef",0, "255.0.0.0", "email@gmail",null , null));
+		Mockito.when(autherRepo.findByEmail(Mockito.anyString())).thenReturn(autherParam);
+		Optional<Auther> auther=autherService.findByEmail("eljoker@gmail.com");
+		assertEquals(true, auther.isPresent());
+		
+	}
+	
+	
+	
+	@Test
+	void findByEmailFoundServiceTest()
+	{
+		Optional<Auther> autherParam= Optional.of(new Auther(0, "255.0.0.0", "email@gmail",null , null));
+		
+		Mockito.when(autherRepo.findByEmail(Mockito.anyString())).thenReturn(autherParam);
+		Optional<Auther> auther=autherService.findByEmail("email@gmail");
+		assertEquals(true, auther.isPresent());
+		assertEquals("email@gmail", auther.get().getEmail());
+		
+	}
+}

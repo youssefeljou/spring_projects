@@ -1,0 +1,104 @@
+package com.example.book.controller;
+
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+import java.util.Optional;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.web.servlet.MockMvc;
+
+import com.example.book.dto.AutherDto;
+import com.example.book.entity.Auther;
+import com.example.book.service.AutherService;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
+@AutoConfigureMockMvc//it is essential to using mockmvc
+public class AutherControllerTest {
+
+	/***		this is test web with restTemplate		***/
+	
+	@Autowired
+	private MockMvc mockMvc;
+	
+	@MockBean
+	private	AutherService autherService;
+	
+	@Autowired //for translate my object to json or opposite
+	private ObjectMapper objectMapper;
+
+	
+
+	@Test//unit testing with mockito
+	public void findByEmailFoundTest() throws Exception
+	{
+		Optional<Auther> autherParam= Optional.of(new Auther("john",0, "255.0.0.0", "john.doe@example.com",null , null));
+		Mockito.when(autherService.findByEmail(Mockito.anyString())).thenReturn(autherParam);
+		String email="john.doe@example.com";
+
+
+			mockMvc.perform(get("/auther/email/{email}", email)
+		            .contentType("application/json"))
+		            //.param("sendWelcomeMail", "true")
+		            //.content()
+			        .andExpect(status().isOk());
+
+
+	}
+	
+	@Test//unit testing with mockito
+	public void insertAutherTest() throws Exception
+	{
+		Auther autherParam= new Auther("johney",0, "255.0.0.0", "john.doe@example.com",null , null);
+		Mockito.when(autherService.insert(Mockito.any(Auther.class))).thenReturn(autherParam);
+		AutherDto dto = new AutherDto();
+		mockMvc.perform(post("/auther")
+	            .contentType("application/json")
+	            .content(objectMapper.writeValueAsString(dto)))
+		        .andExpect(status().isOk());
+
+
+	}
+	
+	
+	
+	/*
+	@Autowired
+	private TestRestTemplate restTemplate;
+	
+	@MockBean
+	private AutherService autherService;
+	
+	@Test//unit testing with mockito
+	public void findByEmailFoundTest()
+	{
+		Optional<Auther> autherParam= Optional.of(new Auther(0, "255.0.0.0", "john.doe@example.com",null , null));
+		Mockito.when(autherService.findByEmail(Mockito.anyString())).thenReturn(autherParam);
+		ResponseEntity<AutherDto> responseEntity= restTemplate.getForEntity("/auther/email/{email}", AutherDto.class,"john.doe@example.com");
+		assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
+		
+		assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
+		//assertThat(responseEntity.getBody()).isEqualTo("OK");
+	}
+	
+	@Test//integration testing
+	public void findByEmailNotFoundTest()
+	{
+		String email="john@example.com";
+		ResponseEntity<AutherDto> responseEntity= restTemplate.getForEntity("/auther/email/{email}", AutherDto.class,  email);
+		assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.INTERNAL_SERVER_ERROR);
+		
+		
+		assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, responseEntity.getStatusCode());
+		//assertThat(responseEntity.getBody()).isEqualTo("OK");
+	}
+	*/
+}

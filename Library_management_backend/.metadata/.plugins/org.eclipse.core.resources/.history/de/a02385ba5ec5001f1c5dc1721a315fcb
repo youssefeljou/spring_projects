@@ -1,0 +1,64 @@
+package com.example.book.entity;
+
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.annotations.Formula;
+
+import com.example.book.base.BaseEntity;
+import com.example.book.validator.IpAddress;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+/**
+ * Entity class representing an Author.
+ */
+@Entity
+@Table(name = "authers")
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class Auther extends BaseEntity<Long> {
+
+	@NotBlank(message = "Name cannot be blank")
+    private String name;
+	
+    @Formula("(select count(*) from books book where book.auther_id = id)")
+    private long bookCount;
+
+    @IpAddress
+    private String ipAddress;
+
+    @Email(message = "Invalid email format")
+    private String email;
+
+    @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class , property = "id")
+    @OneToMany(mappedBy = "auther")
+    private List<Book> books = new ArrayList<>();
+
+    private String imagePath;
+    
+    public Auther(Long id, String name, String status, String createdBy, LocalDateTime createdDate,
+            String lastModifiedBy, LocalDateTime lastModifiedDate, long bookCount,
+            String ipAddress, String email, List<Book> books, String imagePath) {
+  super(id, name, status, createdBy, createdDate, lastModifiedBy, lastModifiedDate);
+  this.bookCount = bookCount;
+  this.ipAddress = ipAddress;
+  this.email = email;
+  this.books = books != null ? books : new ArrayList<>();
+  this.imagePath = imagePath;
+}
+}

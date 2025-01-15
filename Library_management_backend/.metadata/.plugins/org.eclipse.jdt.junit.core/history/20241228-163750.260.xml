@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AutherControllerTest" project="jpa-library-project" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="com.example.book.controller.AutherControllerTest" time="2.123" displayname="AutherControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.example.book.controller.AutherControllerTest]">
+    <testcase name="findByEmailFoundTest" classname="com.example.book.controller.AutherControllerTest" time="2.123" displayname="findByEmailFoundTest()" uniqueid="[engine:junit-jupiter]/[class:com.example.book.controller.AutherControllerTest]/[method:findByEmailFoundTest()]">
+      <error>java.lang.IllegalArgumentException: Not enough variable values available to expand 'email'&#13;
+	at org.springframework.web.util.UriComponents$VarArgsTemplateVariables.getValue(UriComponents.java:370)&#13;
+	at org.springframework.web.util.UriComponents.expandUriComponent(UriComponents.java:263)&#13;
+	at org.springframework.web.util.HierarchicalUriComponents$FullPathComponent.expand(HierarchicalUriComponents.java:928)&#13;
+	at org.springframework.web.util.HierarchicalUriComponents.expandInternal(HierarchicalUriComponents.java:440)&#13;
+	at org.springframework.web.util.HierarchicalUriComponents.expandInternal(HierarchicalUriComponents.java:53)&#13;
+	at org.springframework.web.util.UriComponents.expand(UriComponents.java:172)&#13;
+	at org.springframework.web.util.DefaultUriBuilderFactory$DefaultUriBuilder.build(DefaultUriBuilderFactory.java:459)&#13;
+	at org.springframework.web.util.DefaultUriBuilderFactory.expand(DefaultUriBuilderFactory.java:204)&#13;
+	at org.springframework.boot.web.client.RootUriTemplateHandler.expand(RootUriTemplateHandler.java:59)&#13;
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:800)&#13;
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:442)&#13;
+	at org.springframework.boot.test.web.client.TestRestTemplate.getForEntity(TestRestTemplate.java:244)&#13;
+	at com.example.book.controller.AutherControllerTest.findByEmailFoundTest(AutherControllerTest.java:25)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

@@ -1,0 +1,112 @@
+package com.example.book.controller;
+
+import java.util.List;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
+
+import com.example.book.dto.AutherDto;
+import com.example.book.entity.Auther;
+import com.example.book.entity.AutherSearch;
+import com.example.book.mapper.AutherMapper;
+import com.example.book.service.AutherService;
+
+import io.swagger.v3.oas.annotations.Operation;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j2;
+
+@Validated
+@RestController
+@RequestMapping("/auther")
+@RequiredArgsConstructor
+@Log4j2
+public class AutherController {
+
+    private final AutherService autherService;
+    private final AutherMapper autherMapper;
+
+    @Operation(summary = "Get author by using id")
+    @GetMapping("/id/{id}")
+    public ResponseEntity<?> findById(@Min(value = 1) @Max(value = 2000) @PathVariable long id) {
+    	Auther auther=autherService.findById(id);
+    	
+    	AutherDto dto=autherMapper.mapToDto(auther);
+    	
+    	
+        return ResponseEntity.ok(dto);
+    }
+
+    @Operation(summary = "Get a book by its email")
+	@GetMapping("/email/{email}")
+	public ResponseEntity<?> findByEmail(@PathVariable String email) {
+
+		Auther auther = autherService.findByEmail(email).get();
+
+		AutherDto dto = autherMapper.mapToDto(auther);
+
+		return ResponseEntity.ok(dto);
+	}
+    
+    @Operation(summary = "Get authors")
+    @GetMapping("/findall")
+    public ResponseEntity<?> findAll() {
+    	
+    	//List<Auther> authers=autherService.findAll();
+    
+        return ResponseEntity.ok(autherService.findAll());
+    }
+
+    @Operation(summary = "Get authors that match request body parameters")
+    @PostMapping("/spec")
+    public ResponseEntity<?> findByAutherSpec(@RequestBody AutherSearch autherSearch) {
+        return ResponseEntity.ok(autherService.findByAutherSpec(autherSearch));
+    }
+
+    @Operation(summary = "Insert author with request body parameters")
+    @PostMapping("")
+    public ResponseEntity<?> insert(@RequestBody @Valid AutherDto autherDto) {
+    	log.info("Received AutherDto: {}", autherDto);
+        Auther auther=autherMapper.mapToEntity(autherDto);
+    	
+        Auther entity=autherService.insert(auther);
+        
+        AutherDto dto=autherMapper.mapToDto(entity);
+        
+        return ResponseEntity.ok(dto);
+    }
+
+    @Operation(summary = "Update author using its id with request body parameters")
+    @PutMapping("")
+    public ResponseEntity<?> update(@RequestBody @Valid AutherDto dto) {
+        
+    	Auther auther=autherMapper.mapToEntity(dto);
+    	
+    	Auther entity=autherService.update(auther);
+    	
+    	AutherDto autherDto=autherMapper.mapToDto(entity);
+    	
+        return ResponseEntity.ok(autherDto);
+    }
+
+    @Operation(summary = "Update status of author using its id and new status in request body")
+    @PutMapping("/status/{id}")
+    public ResponseEntity<?> updateStatus(@PathVariable("id") Long id, @RequestBody String status) {
+        try {
+            autherService.updateStatusById(id, status);
+            return ResponseEntity.ok("Status updated successfully");
+        } catch (RuntimeException e) {
+            return ResponseEntity.status(500).body("Error: " + e.getMessage());
+        }
+    }
+
+    @Operation(summary = "Delete author by using its id")
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> deleteById(@PathVariable long id) {
+        autherService.deleteById(id);
+        return ResponseEntity.ok(null);
+    }
+}

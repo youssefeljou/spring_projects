@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AutherControllerTest" project="jpa-library-project" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.example.book.controller.AutherControllerTest" time="1.029" displayname="AutherControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.example.book.controller.AutherControllerTest]">
+    <testcase name="findByEmailNotFoundTest" classname="com.example.book.controller.AutherControllerTest" time="0.948" displayname="findByEmailNotFoundTest()" uniqueid="[engine:junit-jupiter]/[class:com.example.book.controller.AutherControllerTest]/[method:findByEmailNotFoundTest()]"/>
+    <testcase name="findByEmailFoundTest" classname="com.example.book.controller.AutherControllerTest" time="0.079" displayname="findByEmailFoundTest()" uniqueid="[engine:junit-jupiter]/[class:com.example.book.controller.AutherControllerTest]/[method:findByEmailFoundTest()]"/>
+  </testsuite>
+</testrun>

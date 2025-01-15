@@ -1,0 +1,32 @@
+package com.example.book;
+
+import java.util.Optional;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.example.book.entity.Auther;
+import com.example.book.service.AutherService;
+
+
+import lombok.RequiredArgsConstructor;
+
+@SpringBootTest
+@RequiredArgsConstructor
+class JpaLibraryProject1ApplicationTests {
+
+	private final AutherService autherService;
+	@Test
+	void contextLoads() {
+		
+	}
+
+	@Test
+	void findByEmailNotFoundTest()
+	{
+		Optional<Auther> auther=autherService.findByEmail("youssefeljou@gmail.com");
+		assertEquals(false, auther.isPresent());
+		
+	}
+}

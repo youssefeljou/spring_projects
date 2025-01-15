@@ -1,0 +1,710 @@
+2024-12-03 14:25:43,891 ERROR o.s.b.SpringApplication [main] Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.model.processor.ImplicitModelHandler - Could not create component [timeBasedFileNamingAndTriggeringPolicy] of type [ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP] java.lang.ClassNotFoundException: ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:347)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:353)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.example.book.JpaLibraryProject1Application.main(JpaLibraryProject1Application.java:10)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.model.processor.ImplicitModelHandler - Could not create component [timeBasedFileNamingAndTriggeringPolicy] of type [ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP] java.lang.ClassNotFoundException: ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reportConfigurationErrorsIfNecessary(LogbackLoggingSystem.java:291)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:269)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:344)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:74)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:61)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:197)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:332)
+	... 19 common frames omitted
+	Suppressed: java.lang.ClassNotFoundException: ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP
+		at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+		at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+		at ch.qos.logback.core.util.Loader.loadClass(Loader.java:132)
+		at ch.qos.logback.core.model.processor.ImplicitModelHandler.doComplex(ImplicitModelHandler.java:134)
+		at ch.qos.logback.core.model.processor.ImplicitModelHandler.handle(ImplicitModelHandler.java:94)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:241)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:253)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:253)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:253)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.traversalLoop(DefaultProcessor.java:90)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.process(DefaultProcessor.java:106)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.processModel(GenericXMLConfigurator.java:222)
+		at org.springframework.boot.logging.logback.SpringBootJoranConfigurator.processModel(SpringBootJoranConfigurator.java:136)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:178)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.configureByResourceUrl(LogbackLoggingSystem.java:300)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.lambda$loadConfiguration$2(LogbackLoggingSystem.java:262)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.withLoggingSuppressed(LogbackLoggingSystem.java:483)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:255)
+		... 24 common frames omitted
+2024-12-03 14:29:25,981 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-12-03 14:29:26,063 INFO o.s.b.StartupInfoLogger [main] Starting JpaLibraryProject1Application using Java 21.0.4 with PID 20212 (D:\spring_projects\jpa-library-project\target\classes started by youss in D:\spring_projects\jpa-library-project)
+2024-12-03 14:29:26,065 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-12-03 14:29:27,517 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-03 14:29:27,547 DEBUG o.s.d.r.c.RepositoryConfigurationDelegate [main] Scanning for JPA repositories in packages com.example.book.
+2024-12-03 14:29:27,570 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider [main] Identified candidate component class: file [D:\spring_projects\jpa-library-project\target\classes\com\example\book\repository\AutherRepo.class]
+2024-12-03 14:29:27,572 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider [main] Identified candidate component class: file [D:\spring_projects\jpa-library-project\target\classes\com\example\book\repository\BookRepo.class]
+2024-12-03 14:29:27,646 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 96 ms. Found 2 JPA repository interfaces.
+2024-12-03 14:29:28,764 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-12-03 14:29:28,783 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-03 14:29:28,787 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-12-03 14:29:28,789 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-03 14:29:28,868 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-12-03 14:29:28,869 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2720 ms
+2024-12-03 14:29:29,129 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-03 14:29:29,224 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-03 14:29:29,282 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-12-03 14:29:29,833 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-03 14:29:29,876 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-12-03 14:29:30,862 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b671dda
+2024-12-03 14:29:30,866 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-12-03 14:29:31,020 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-03 14:29:31,022 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-03 14:29:31,050 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-03 14:29:32,643 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-03 14:29:32,950 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-03 14:29:33,024 DEBUG o.s.d.j.r.c.JpaMetamodelMappingContextFactoryBean [main] Initializing JpaMetamodelMappingContext…
+2024-12-03 14:29:33,051 DEBUG o.s.d.j.r.c.JpaMetamodelMappingContextFactoryBean [main] Finished initializing JpaMetamodelMappingContext
+2024-12-03 14:29:33,283 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Initializing repository instance for com.example.book.repository.AutherRepo…
+2024-12-03 14:29:33,941 DEBUG o.s.d.j.r.q.NamedQuery [main] Looking up named query Auther.findByEmail
+2024-12-03 14:29:33,947 DEBUG o.s.d.j.r.q.NamedQuery [main] Did not find named query Auther.findByEmail
+2024-12-03 14:29:34,227 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Finished creation of repository instance for com.example.book.repository.AutherRepo.
+2024-12-03 14:29:34,298 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Initializing repository instance for com.example.book.repository.BookRepo…
+2024-12-03 14:29:34,309 DEBUG o.s.d.j.r.q.NamedQuery [main] Did not find named query Book.deleteByAutherId.count
+2024-12-03 14:29:34,332 INFO o.s.d.j.r.q.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-03 14:29:34,836 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Finished creation of repository instance for com.example.book.repository.BookRepo.
+2024-12-03 14:29:34,969 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-03 14:29:35,690 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-12-03 14:29:35,738 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2024-12-03 14:29:35,751 INFO o.s.b.StartupInfoLogger [main] Started JpaLibraryProject1Application in 10.273 seconds (process running for 11.578)
+2024-12-03 14:29:35,854 DEBUG o.h.e.j.s.SqlStatementLogger [main] 
+    select
+        a1_0.id,
+        (select
+            count(*) 
+        from
+            books book 
+        where
+            book.auther_id = a1_0.id),
+        a1_0.created_by,
+        a1_0.created_date,
+        a1_0.email,
+        a1_0.ip_address,
+        a1_0.last_modified_by,
+        a1_0.last_modified_date,
+        a1_0.name,
+        a1_0.status 
+    from
+        authers a1_0
+2024-12-03 14:29:35,965 DEBUG o.h.e.j.s.SqlStatementLogger [main] 
+    select
+        b1_0.id,
+        b1_0.auther_id,
+        a1_0.id,
+        (select
+            count(*) 
+        from
+            books book 
+        where
+            book.auther_id = a1_0.id),
+        a1_0.created_by,
+        a1_0.created_date,
+        a1_0.email,
+        a1_0.ip_address,
+        a1_0.last_modified_by,
+        a1_0.last_modified_date,
+        a1_0.name,
+        a1_0.status,
+        (select
+            count(*) 
+        from
+            books),
+        b1_0.created_by,
+        b1_0.created_date,
+        b1_0.last_modified_by,
+        b1_0.last_modified_date,
+        b1_0.name,
+        b1_0.price,
+        b1_0.status 
+    from
+        books b1_0 
+    join
+        authers a1_0 
+            on a1_0.id=b1_0.auther_id
+2024-12-03 14:30:29,963 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(9)-127.0.0.1] Application shutdown requested.
+2024-12-03 14:30:29,966 INFO o.s.b.w.e.t.GracefulShutdown [RMI TCP Connection(9)-127.0.0.1] Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-03 14:30:29,968 INFO o.a.j.l.DirectJDKLog [tomcat-shutdown] Pausing ProtocolHandler ["http-nio-8080"]
+2024-12-03 14:30:29,976 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2024-12-03 14:30:29,977 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(9)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8080"]
+2024-12-03 14:30:29,981 INFO o.s.o.j.AbstractEntityManagerFactoryBean [RMI TCP Connection(9)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-03 14:30:29,984 INFO c.z.h.HikariDataSource [RMI TCP Connection(9)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2024-12-03 14:30:30,001 INFO c.z.h.HikariDataSource [RMI TCP Connection(9)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2024-12-03 14:30:33,688 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-12-03 14:30:33,766 INFO o.s.b.StartupInfoLogger [main] Starting JpaLibraryProject1Application using Java 21.0.4 with PID 13644 (D:\spring_projects\jpa-library-project\target\classes started by youss in D:\spring_projects\jpa-library-project)
+2024-12-03 14:30:33,768 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-12-03 14:30:34,725 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-03 14:30:34,757 DEBUG o.s.d.r.c.RepositoryConfigurationDelegate [main] Scanning for JPA repositories in packages com.example.book.
+2024-12-03 14:30:34,779 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider [main] Identified candidate component class: file [D:\spring_projects\jpa-library-project\target\classes\com\example\book\repository\AutherRepo.class]
+2024-12-03 14:30:34,780 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider [main] Identified candidate component class: file [D:\spring_projects\jpa-library-project\target\classes\com\example\book\repository\BookRepo.class]
+2024-12-03 14:30:34,832 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 72 ms. Found 2 JPA repository interfaces.
+2024-12-03 14:30:35,685 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-12-03 14:30:35,702 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-03 14:30:35,704 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-12-03 14:30:35,705 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-03 14:30:35,780 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-12-03 14:30:35,780 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1945 ms
+2024-12-03 14:30:36,056 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-03 14:30:36,162 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-03 14:30:36,235 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-12-03 14:30:36,727 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-03 14:30:36,790 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-12-03 14:30:37,303 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@97b84a4
+2024-12-03 14:30:37,307 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-12-03 14:30:37,417 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-03 14:30:37,420 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-03 14:30:37,468 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-03 14:30:39,330 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-03 14:30:39,453 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-03 14:30:39,550 DEBUG o.s.d.j.r.c.JpaMetamodelMappingContextFactoryBean [main] Initializing JpaMetamodelMappingContext…
+2024-12-03 14:30:39,571 DEBUG o.s.d.j.r.c.JpaMetamodelMappingContextFactoryBean [main] Finished initializing JpaMetamodelMappingContext
+2024-12-03 14:30:39,740 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Initializing repository instance for com.example.book.repository.AutherRepo…
+2024-12-03 14:30:39,821 DEBUG o.s.d.j.r.q.NamedQuery [main] Looking up named query Auther.findByEmail
+2024-12-03 14:30:39,826 DEBUG o.s.d.j.r.q.NamedQuery [main] Did not find named query Auther.findByEmail
+2024-12-03 14:30:39,923 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Finished creation of repository instance for com.example.book.repository.AutherRepo.
+2024-12-03 14:30:39,970 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Initializing repository instance for com.example.book.repository.BookRepo…
+2024-12-03 14:30:39,979 DEBUG o.s.d.j.r.q.NamedQuery [main] Did not find named query Book.deleteByAutherId.count
+2024-12-03 14:30:39,996 INFO o.s.d.j.r.q.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-03 14:30:40,424 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Finished creation of repository instance for com.example.book.repository.BookRepo.
+2024-12-03 14:30:40,583 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-03 14:30:41,535 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-12-03 14:30:42,199 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2024-12-03 14:30:42,209 INFO o.s.b.StartupInfoLogger [main] Started JpaLibraryProject1Application in 8.873 seconds (process running for 10.04)
+2024-12-03 14:30:42,848 DEBUG o.h.e.j.s.SqlStatementLogger [main] 
+    select
+        a1_0.id,
+        (select
+            count(*) 
+        from
+            books book 
+        where
+            book.auther_id = a1_0.id),
+        a1_0.created_by,
+        a1_0.created_date,
+        a1_0.email,
+        a1_0.ip_address,
+        a1_0.last_modified_by,
+        a1_0.last_modified_date,
+        a1_0.name,
+        a1_0.status 
+    from
+        authers a1_0
+2024-12-03 14:30:43,285 DEBUG o.h.e.j.s.SqlStatementLogger [main] 
+    select
+        b1_0.id,
+        b1_0.auther_id,
+        a1_0.id,
+        (select
+            count(*) 
+        from
+            books book 
+        where
+            book.auther_id = a1_0.id),
+        a1_0.created_by,
+        a1_0.created_date,
+        a1_0.email,
+        a1_0.ip_address,
+        a1_0.last_modified_by,
+        a1_0.last_modified_date,
+        a1_0.name,
+        a1_0.status,
+        (select
+            count(*) 
+        from
+            books),
+        b1_0.created_by,
+        b1_0.created_date,
+        b1_0.last_modified_by,
+        b1_0.last_modified_date,
+        b1_0.name,
+        b1_0.price,
+        b1_0.status 
+    from
+        books b1_0 
+    join
+        authers a1_0 
+            on a1_0.id=b1_0.auther_id
+2024-12-03 14:34:29,653 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(12)-127.0.0.1] Application shutdown requested.
+2024-12-03 14:34:29,657 INFO o.s.b.w.e.t.GracefulShutdown [RMI TCP Connection(12)-127.0.0.1] Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-03 14:34:29,659 INFO o.a.j.l.DirectJDKLog [tomcat-shutdown] Pausing ProtocolHandler ["http-nio-8080"]
+2024-12-03 14:34:29,700 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2024-12-03 14:34:29,701 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(12)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8080"]
+2024-12-03 14:34:29,707 INFO o.s.o.j.AbstractEntityManagerFactoryBean [RMI TCP Connection(12)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-03 14:34:29,710 INFO c.z.h.HikariDataSource [RMI TCP Connection(12)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2024-12-03 14:34:29,728 INFO c.z.h.HikariDataSource [RMI TCP Connection(12)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2024-12-03 14:34:39,930 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-12-03 14:34:40,075 INFO o.s.b.StartupInfoLogger [main] Starting JpaLibraryProject1Application using Java 21.0.4 with PID 17300 (D:\spring_projects\jpa-library-project\target\classes started by youss in D:\spring_projects\jpa-library-project)
+2024-12-03 14:34:40,082 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-12-03 14:34:44,158 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-03 14:34:44,211 DEBUG o.s.d.r.c.RepositoryConfigurationDelegate [main] Scanning for JPA repositories in packages com.example.book.
+2024-12-03 14:34:44,255 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider [main] Identified candidate component class: file [D:\spring_projects\jpa-library-project\target\classes\com\example\book\repository\AutherRepo.class]
+2024-12-03 14:34:44,259 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider [main] Identified candidate component class: file [D:\spring_projects\jpa-library-project\target\classes\com\example\book\repository\BookRepo.class]
+2024-12-03 14:34:44,422 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 203 ms. Found 2 JPA repository interfaces.
+2024-12-03 14:34:47,595 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-12-03 14:34:47,675 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-03 14:34:47,684 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-12-03 14:34:47,685 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-03 14:34:47,963 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-12-03 14:34:47,964 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 7710 ms
+2024-12-03 14:34:48,449 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-03 14:34:48,648 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-03 14:34:48,735 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-12-03 14:34:49,585 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-03 14:34:49,664 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-12-03 14:34:50,939 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1013871e
+2024-12-03 14:34:50,945 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-12-03 14:34:51,100 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-03 14:34:51,103 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-03 14:34:51,211 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-03 14:35:05,118 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-03 14:35:05,319 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-03 14:35:05,652 DEBUG o.s.d.j.r.c.JpaMetamodelMappingContextFactoryBean [main] Initializing JpaMetamodelMappingContext…
+2024-12-03 14:35:05,708 DEBUG o.s.d.j.r.c.JpaMetamodelMappingContextFactoryBean [main] Finished initializing JpaMetamodelMappingContext
+2024-12-03 14:35:05,964 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Initializing repository instance for com.example.book.repository.AutherRepo…
+2024-12-03 14:35:06,088 DEBUG o.s.d.j.r.q.NamedQuery [main] Looking up named query Auther.findByEmail
+2024-12-03 14:35:06,097 DEBUG o.s.d.j.r.q.NamedQuery [main] Did not find named query Auther.findByEmail
+2024-12-03 14:35:06,246 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Finished creation of repository instance for com.example.book.repository.AutherRepo.
+2024-12-03 14:35:06,366 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Initializing repository instance for com.example.book.repository.BookRepo…
+2024-12-03 14:35:06,391 DEBUG o.s.d.j.r.q.NamedQuery [main] Did not find named query Book.deleteByAutherId.count
+2024-12-03 14:35:06,430 INFO o.s.d.j.r.q.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-03 14:35:07,191 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Finished creation of repository instance for com.example.book.repository.BookRepo.
+2024-12-03 14:35:07,580 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-03 14:35:08,451 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-12-03 14:35:08,513 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2024-12-03 14:35:08,573 INFO o.s.b.StartupInfoLogger [main] Started JpaLibraryProject1Application in 30.068 seconds (process running for 35.565)
+2024-12-03 14:35:08,731 DEBUG o.h.e.j.s.SqlStatementLogger [main] 
+    select
+        a1_0.id,
+        (select
+            count(*) 
+        from
+            books book 
+        where
+            book.auther_id = a1_0.id),
+        a1_0.created_by,
+        a1_0.created_date,
+        a1_0.email,
+        a1_0.ip_address,
+        a1_0.last_modified_by,
+        a1_0.last_modified_date,
+        a1_0.name,
+        a1_0.status 
+    from
+        authers a1_0
+2024-12-03 14:35:08,937 DEBUG o.h.e.j.s.SqlStatementLogger [main] 
+    select
+        b1_0.id,
+        b1_0.auther_id,
+        a1_0.id,
+        (select
+            count(*) 
+        from
+            books book 
+        where
+            book.auther_id = a1_0.id),
+        a1_0.created_by,
+        a1_0.created_date,
+        a1_0.email,
+        a1_0.ip_address,
+        a1_0.last_modified_by,
+        a1_0.last_modified_date,
+        a1_0.name,
+        a1_0.status,
+        (select
+            count(*) 
+        from
+            books),
+        b1_0.created_by,
+        b1_0.created_date,
+        b1_0.last_modified_by,
+        b1_0.last_modified_date,
+        b1_0.name,
+        b1_0.price,
+        b1_0.status 
+    from
+        books b1_0 
+    join
+        authers a1_0 
+            on a1_0.id=b1_0.auther_id
+2024-12-03 14:52:23,606 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(31)-127.0.0.1] Application shutdown requested.
+2024-12-03 14:52:26,579 INFO o.s.b.w.e.t.GracefulShutdown [RMI TCP Connection(31)-127.0.0.1] Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-03 14:52:26,775 INFO o.a.j.l.DirectJDKLog [tomcat-shutdown] Pausing ProtocolHandler ["http-nio-8080"]
+2024-12-03 14:52:27,232 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2024-12-03 14:52:27,296 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(31)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8080"]
+2024-12-03 14:52:27,873 INFO o.s.o.j.AbstractEntityManagerFactoryBean [RMI TCP Connection(31)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-03 14:52:28,364 INFO c.z.h.HikariDataSource [RMI TCP Connection(31)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2024-12-03 14:52:28,711 INFO c.z.h.HikariDataSource [RMI TCP Connection(31)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2024-12-03 14:53:51,137 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-12-03 14:53:51,225 INFO o.s.b.StartupInfoLogger [main] Starting JpaLibraryProject1Application using Java 21.0.4 with PID 10752 (D:\spring_projects\jpa-library-project\target\classes started by youss in D:\spring_projects\jpa-library-project)
+2024-12-03 14:53:51,228 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-12-03 14:53:52,395 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-03 14:53:52,432 DEBUG o.s.d.r.c.RepositoryConfigurationDelegate [main] Scanning for JPA repositories in packages com.example.book.
+2024-12-03 14:53:52,456 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider [main] Identified candidate component class: file [D:\spring_projects\jpa-library-project\target\classes\com\example\book\repository\AutherRepo.class]
+2024-12-03 14:53:52,458 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider [main] Identified candidate component class: file [D:\spring_projects\jpa-library-project\target\classes\com\example\book\repository\BookRepo.class]
+2024-12-03 14:53:52,531 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 95 ms. Found 2 JPA repository interfaces.
+2024-12-03 14:53:53,565 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-12-03 14:53:53,588 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-03 14:53:53,597 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-12-03 14:53:53,598 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-03 14:53:53,679 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-12-03 14:53:53,680 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2350 ms
+2024-12-03 14:53:53,938 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-03 14:53:54,028 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-03 14:53:54,086 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-12-03 14:53:54,521 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-03 14:53:54,564 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-12-03 14:53:55,247 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4cf5d999
+2024-12-03 14:53:55,252 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-12-03 14:53:55,378 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-03 14:53:55,380 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-03 14:53:55,423 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-03 14:53:57,025 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-03 14:53:57,256 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-03 14:53:57,325 DEBUG o.s.d.j.r.c.JpaMetamodelMappingContextFactoryBean [main] Initializing JpaMetamodelMappingContext…
+2024-12-03 14:53:57,341 DEBUG o.s.d.j.r.c.JpaMetamodelMappingContextFactoryBean [main] Finished initializing JpaMetamodelMappingContext
+2024-12-03 14:53:57,512 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Initializing repository instance for com.example.book.repository.AutherRepo…
+2024-12-03 14:53:57,599 DEBUG o.s.d.j.r.q.NamedQuery [main] Looking up named query Auther.findByEmail
+2024-12-03 14:53:57,605 DEBUG o.s.d.j.r.q.NamedQuery [main] Did not find named query Auther.findByEmail
+2024-12-03 14:53:57,745 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Finished creation of repository instance for com.example.book.repository.AutherRepo.
+2024-12-03 14:53:57,812 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Initializing repository instance for com.example.book.repository.BookRepo…
+2024-12-03 14:53:57,829 DEBUG o.s.d.j.r.q.NamedQuery [main] Did not find named query Book.deleteByAutherId.count
+2024-12-03 14:53:57,854 INFO o.s.d.j.r.q.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-03 14:53:58,605 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Finished creation of repository instance for com.example.book.repository.BookRepo.
+2024-12-03 14:53:58,763 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-03 14:53:59,388 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-12-03 14:53:59,446 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2024-12-03 14:53:59,458 INFO o.s.b.StartupInfoLogger [main] Started JpaLibraryProject1Application in 8.747 seconds (process running for 12.848)
+2024-12-03 14:53:59,587 DEBUG o.h.e.j.s.SqlStatementLogger [main] 
+    select
+        a1_0.id,
+        (select
+            count(*) 
+        from
+            books book 
+        where
+            book.auther_id = a1_0.id),
+        a1_0.created_by,
+        a1_0.created_date,
+        a1_0.email,
+        a1_0.ip_address,
+        a1_0.last_modified_by,
+        a1_0.last_modified_date,
+        a1_0.name,
+        a1_0.status 
+    from
+        authers a1_0
+2024-12-03 14:53:59,708 DEBUG o.h.e.j.s.SqlStatementLogger [main] 
+    select
+        b1_0.id,
+        b1_0.auther_id,
+        a1_0.id,
+        (select
+            count(*) 
+        from
+            books book 
+        where
+            book.auther_id = a1_0.id),
+        a1_0.created_by,
+        a1_0.created_date,
+        a1_0.email,
+        a1_0.ip_address,
+        a1_0.last_modified_by,
+        a1_0.last_modified_date,
+        a1_0.name,
+        a1_0.status,
+        (select
+            count(*) 
+        from
+            books),
+        b1_0.created_by,
+        b1_0.created_date,
+        b1_0.last_modified_by,
+        b1_0.last_modified_date,
+        b1_0.name,
+        b1_0.price,
+        b1_0.status 
+    from
+        books b1_0 
+    join
+        authers a1_0 
+            on a1_0.id=b1_0.auther_id
+2024-12-03 15:01:09,216 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(15)-127.0.0.1] Application shutdown requested.
+2024-12-03 15:01:18,818 INFO o.s.b.w.e.t.GracefulShutdown [RMI TCP Connection(15)-127.0.0.1] Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-03 15:01:18,966 INFO o.a.j.l.DirectJDKLog [tomcat-shutdown] Pausing ProtocolHandler ["http-nio-8080"]
+2024-12-03 15:01:19,225 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2024-12-03 15:01:19,248 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(15)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8080"]
+2024-12-03 15:01:19,621 INFO o.s.o.j.AbstractEntityManagerFactoryBean [RMI TCP Connection(15)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-03 15:01:19,874 INFO c.z.h.HikariDataSource [RMI TCP Connection(15)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2024-12-03 15:01:20,224 INFO c.z.h.HikariDataSource [RMI TCP Connection(15)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2024-12-03 15:01:37,240 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-12-03 15:01:37,340 INFO o.s.b.StartupInfoLogger [main] Starting JpaLibraryProject1Application using Java 21.0.4 with PID 13644 (D:\spring_projects\jpa-library-project\target\classes started by youss in D:\spring_projects\jpa-library-project)
+2024-12-03 15:01:37,342 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-12-03 15:01:38,410 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-03 15:01:38,433 DEBUG o.s.d.r.c.RepositoryConfigurationDelegate [main] Scanning for JPA repositories in packages com.example.book.
+2024-12-03 15:01:38,452 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider [main] Identified candidate component class: file [D:\spring_projects\jpa-library-project\target\classes\com\example\book\repository\AutherRepo.class]
+2024-12-03 15:01:38,454 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider [main] Identified candidate component class: file [D:\spring_projects\jpa-library-project\target\classes\com\example\book\repository\BookRepo.class]
+2024-12-03 15:01:38,508 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 72 ms. Found 2 JPA repository interfaces.
+2024-12-03 15:01:39,508 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-12-03 15:01:39,538 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-03 15:01:39,542 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-12-03 15:01:39,542 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-03 15:01:39,651 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-12-03 15:01:39,652 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2232 ms
+2024-12-03 15:01:39,895 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-03 15:01:40,023 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-03 15:01:40,165 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-12-03 15:01:40,702 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-03 15:01:40,749 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-12-03 15:01:41,457 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a7d914c
+2024-12-03 15:01:41,460 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-12-03 15:01:41,596 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-03 15:01:41,597 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-03 15:01:41,628 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-03 15:01:43,261 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-03 15:01:43,500 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-03 15:01:43,630 DEBUG o.s.d.j.r.c.JpaMetamodelMappingContextFactoryBean [main] Initializing JpaMetamodelMappingContext…
+2024-12-03 15:01:43,660 DEBUG o.s.d.j.r.c.JpaMetamodelMappingContextFactoryBean [main] Finished initializing JpaMetamodelMappingContext
+2024-12-03 15:01:43,812 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Initializing repository instance for com.example.book.repository.AutherRepo…
+2024-12-03 15:01:43,889 DEBUG o.s.d.j.r.q.NamedQuery [main] Looking up named query Auther.findByEmail
+2024-12-03 15:01:43,894 DEBUG o.s.d.j.r.q.NamedQuery [main] Did not find named query Auther.findByEmail
+2024-12-03 15:01:43,990 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Finished creation of repository instance for com.example.book.repository.AutherRepo.
+2024-12-03 15:01:44,101 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Initializing repository instance for com.example.book.repository.BookRepo…
+2024-12-03 15:01:44,111 DEBUG o.s.d.j.r.q.NamedQuery [main] Did not find named query Book.deleteByAutherId.count
+2024-12-03 15:01:44,127 INFO o.s.d.j.r.q.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-03 15:01:44,591 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Finished creation of repository instance for com.example.book.repository.BookRepo.
+2024-12-03 15:01:44,771 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-03 15:01:45,527 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-12-03 15:01:45,583 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2024-12-03 15:01:45,600 INFO o.s.b.StartupInfoLogger [main] Started JpaLibraryProject1Application in 8.847 seconds (process running for 13.488)
+2024-12-03 15:01:45,809 DEBUG o.h.e.j.s.SqlStatementLogger [main] 
+    select
+        a1_0.id,
+        (select
+            count(*) 
+        from
+            books book 
+        where
+            book.auther_id = a1_0.id),
+        a1_0.created_by,
+        a1_0.created_date,
+        a1_0.email,
+        a1_0.ip_address,
+        a1_0.last_modified_by,
+        a1_0.last_modified_date,
+        a1_0.name,
+        a1_0.status 
+    from
+        authers a1_0
+2024-12-03 15:01:46,018 DEBUG o.h.e.j.s.SqlStatementLogger [main] 
+    select
+        b1_0.id,
+        b1_0.auther_id,
+        a1_0.id,
+        (select
+            count(*) 
+        from
+            books book 
+        where
+            book.auther_id = a1_0.id),
+        a1_0.created_by,
+        a1_0.created_date,
+        a1_0.email,
+        a1_0.ip_address,
+        a1_0.last_modified_by,
+        a1_0.last_modified_date,
+        a1_0.name,
+        a1_0.status,
+        (select
+            count(*) 
+        from
+            books),
+        b1_0.created_by,
+        b1_0.created_date,
+        b1_0.last_modified_by,
+        b1_0.last_modified_date,
+        b1_0.name,
+        b1_0.price,
+        b1_0.status 
+    from
+        books b1_0 
+    join
+        authers a1_0 
+            on a1_0.id=b1_0.auther_id
+2024-12-03 15:30:51,893 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(37)-127.0.0.1] Application shutdown requested.
+2024-12-03 15:30:52,675 INFO o.s.b.w.e.t.GracefulShutdown [RMI TCP Connection(37)-127.0.0.1] Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-03 15:30:52,729 INFO o.a.j.l.DirectJDKLog [tomcat-shutdown] Pausing ProtocolHandler ["http-nio-8080"]
+2024-12-03 15:30:52,798 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2024-12-03 15:30:52,810 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(37)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8080"]
+2024-12-03 15:30:52,952 INFO o.s.o.j.AbstractEntityManagerFactoryBean [RMI TCP Connection(37)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-03 15:30:53,130 INFO c.z.h.HikariDataSource [RMI TCP Connection(37)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2024-12-03 15:30:53,452 INFO c.z.h.HikariDataSource [RMI TCP Connection(37)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2024-12-03 15:31:00,128 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-12-03 15:31:00,225 INFO o.s.b.StartupInfoLogger [main] Starting JpaLibraryProject1Application using Java 21.0.4 with PID 19844 (D:\spring_projects\jpa-library-project\target\classes started by youss in D:\spring_projects\jpa-library-project)
+2024-12-03 15:31:00,227 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-12-03 15:31:01,428 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-03 15:31:01,451 DEBUG o.s.d.r.c.RepositoryConfigurationDelegate [main] Scanning for JPA repositories in packages com.example.book.
+2024-12-03 15:31:01,470 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider [main] Identified candidate component class: file [D:\spring_projects\jpa-library-project\target\classes\com\example\book\repository\AutherRepo.class]
+2024-12-03 15:31:01,471 DEBUG o.s.c.a.ClassPathScanningCandidateComponentProvider [main] Identified candidate component class: file [D:\spring_projects\jpa-library-project\target\classes\com\example\book\repository\BookRepo.class]
+2024-12-03 15:31:01,523 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
+2024-12-03 15:31:02,489 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-12-03 15:31:02,507 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-03 15:31:02,509 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-12-03 15:31:02,510 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-03 15:31:02,596 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-12-03 15:31:02,596 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2257 ms
+2024-12-03 15:31:02,842 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-03 15:31:02,937 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-03 15:31:02,995 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-12-03 15:31:03,397 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-03 15:31:03,443 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-12-03 15:31:04,145 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e46a125
+2024-12-03 15:31:04,149 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-12-03 15:31:04,276 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-03 15:31:04,279 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-03 15:31:04,311 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-03 15:31:06,084 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-03 15:31:06,300 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-03 15:31:06,380 DEBUG o.s.d.j.r.c.JpaMetamodelMappingContextFactoryBean [main] Initializing JpaMetamodelMappingContext…
+2024-12-03 15:31:06,402 DEBUG o.s.d.j.r.c.JpaMetamodelMappingContextFactoryBean [main] Finished initializing JpaMetamodelMappingContext
+2024-12-03 15:31:06,553 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Initializing repository instance for com.example.book.repository.AutherRepo…
+2024-12-03 15:31:06,635 DEBUG o.s.d.j.r.q.NamedQuery [main] Looking up named query Auther.findByEmail
+2024-12-03 15:31:06,638 DEBUG o.s.d.j.r.q.NamedQuery [main] Did not find named query Auther.findByEmail
+2024-12-03 15:31:06,728 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Finished creation of repository instance for com.example.book.repository.AutherRepo.
+2024-12-03 15:31:06,785 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Initializing repository instance for com.example.book.repository.BookRepo…
+2024-12-03 15:31:06,797 DEBUG o.s.d.j.r.q.NamedQuery [main] Did not find named query Book.deleteByAutherId.count
+2024-12-03 15:31:06,820 INFO o.s.d.j.r.q.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-03 15:31:07,715 DEBUG o.s.d.r.c.s.RepositoryFactorySupport [main] Finished creation of repository instance for com.example.book.repository.BookRepo.
+2024-12-03 15:31:07,891 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-03 15:31:08,454 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-12-03 15:31:08,491 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2024-12-03 15:31:08,508 INFO o.s.b.StartupInfoLogger [main] Started JpaLibraryProject1Application in 8.801 seconds (process running for 10.757)
+2024-12-03 15:31:08,612 DEBUG o.h.e.j.s.SqlStatementLogger [main] 
+    select
+        a1_0.id,
+        (select
+            count(*) 
+        from
+            books book 
+        where
+            book.auther_id = a1_0.id),
+        a1_0.created_by,
+        a1_0.created_date,
+        a1_0.email,
+        a1_0.ip_address,
+        a1_0.last_modified_by,
+        a1_0.last_modified_date,
+        a1_0.name,
+        a1_0.status 
+    from
+        authers a1_0
+2024-12-03 15:31:08,699 DEBUG o.h.e.j.s.SqlStatementLogger [main] 
+    select
+        b1_0.id,
+        b1_0.auther_id,
+        a1_0.id,
+        (select
+            count(*) 
+        from
+            books book 
+        where
+            book.auther_id = a1_0.id),
+        a1_0.created_by,
+        a1_0.created_date,
+        a1_0.email,
+        a1_0.ip_address,
+        a1_0.last_modified_by,
+        a1_0.last_modified_date,
+        a1_0.name,
+        a1_0.status,
+        (select
+            count(*) 
+        from
+            books),
+        b1_0.created_by,
+        b1_0.created_date,
+        b1_0.last_modified_by,
+        b1_0.last_modified_date,
+        b1_0.name,
+        b1_0.price,
+        b1_0.status 
+    from
+        books b1_0 
+    join
+        authers a1_0 
+            on a1_0.id=b1_0.auther_id
+2024-12-03 15:33:51,927 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(11)-127.0.0.1] Application shutdown requested.
+2024-12-03 15:33:51,963 INFO o.s.b.w.e.t.GracefulShutdown [RMI TCP Connection(11)-127.0.0.1] Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-03 15:33:51,967 INFO o.a.j.l.DirectJDKLog [tomcat-shutdown] Pausing ProtocolHandler ["http-nio-8080"]
+2024-12-03 15:33:51,977 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2024-12-03 15:33:51,978 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(11)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8080"]
+2024-12-03 15:33:51,992 INFO o.s.o.j.AbstractEntityManagerFactoryBean [RMI TCP Connection(11)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-03 15:33:52,002 INFO c.z.h.HikariDataSource [RMI TCP Connection(11)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2024-12-03 15:33:52,036 INFO c.z.h.HikariDataSource [RMI TCP Connection(11)-127.0.0.1] HikariPool-1 - Shutdown completed.

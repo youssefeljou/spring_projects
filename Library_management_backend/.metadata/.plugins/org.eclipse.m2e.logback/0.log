@@ -1,0 +1,528 @@
+2024-12-22 18:44:49,315 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2024-12-22 18:46:18,048 [Worker-2: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:jpa-library-project-1:0.0.1-SNAPSHOT @ D:\Spring_projects2\Library_management_backend\jpa-library-project\pom.xml.
+2024-12-22 18:46:24,611 [Worker-2: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jpa-library-project/src/main/java
+2024-12-22 18:46:24,614 [Worker-2: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jpa-library-project/src/main/resources
+2024-12-22 18:46:24,616 [Worker-2: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jpa-library-project/src/main/resources
+2024-12-22 18:46:24,617 [Worker-2: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jpa-library-project/src/test/java
+2024-12-22 18:46:24,620 [Worker-2: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jpa-library-project/src/test/resources
+2024-12-22 18:46:28,161 [Worker-2: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 14 sec
+2024-12-22 18:46:37,586 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-22 18:46:37,641 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-22 18:46:37,767 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects2\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-22 18:47:33,000 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-22 18:47:33,024 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-22 18:47:33,030 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects2\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-26 22:26:49,581 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-12-26 22:27:09,465 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-26 22:27:09,534 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-26 22:27:09,772 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 00:01:24,036 [Worker-23: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-12-27 00:01:30,237 [Worker-23: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:jpa-library-project-1:0.0.1-SNAPSHOT @ D:\Spring_projects\Library_management_backend\jpa-library-project\pom.xml.
+2024-12-27 00:01:33,035 [Worker-23: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jpa-library-project/src/main/java
+2024-12-27 00:01:33,039 [Worker-23: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jpa-library-project/src/main/resources
+2024-12-27 00:01:33,039 [Worker-23: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jpa-library-project/src/main/resources
+2024-12-27 00:01:33,040 [Worker-23: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jpa-library-project/src/test/java
+2024-12-27 00:01:33,042 [Worker-23: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jpa-library-project/src/test/resources
+2024-12-27 00:01:36,280 [Worker-23: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for jpa-library-project
+2024-12-27 00:01:36,346 [Worker-23: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 8.00 sec, update config takes 2.00 sec 
+2024-12-27 00:01:40,531 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 00:01:40,578 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 00:01:40,615 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 00:01:40,615 [Worker-20: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of jpa-library-project
+2024-12-27 00:01:40,616 [Worker-20: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for jpa-library-project
+2024-12-27 00:02:08,935 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 00:02:08,938 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 00:02:08,945 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 00:11:03,725 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 00:11:03,767 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 00:11:03,779 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 00:11:08,646 [main] INFO  o.e.m.jdt.internal.UnitTestSupport - Updating JpaLibraryProject1ApplicationTests from maven configuration
+2024-12-27 00:11:14,048 [Worker-33: Launching JpaLibraryProject1ApplicationTests] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.11.3/junit-platform-launcher-1.11.3.jar
+2024-12-27 00:11:14,238 [Worker-33: Launching JpaLibraryProject1ApplicationTests] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.11.3/junit-platform-launcher-1.11.3.jar
+2024-12-27 00:16:55,605 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 00:16:55,639 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 00:16:55,645 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 00:28:12,281 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 00:28:12,337 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 00:28:12,345 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 00:29:14,755 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 00:29:14,995 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 00:29:15,015 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 00:32:48,907 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 00:32:48,939 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 00:32:48,949 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 00:33:07,769 [main] INFO  o.e.m.jdt.internal.UnitTestSupport - Updating AutherRepoTest from maven configuration
+2024-12-27 00:36:29,390 [Worker-46: Launching AutherRepoTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 00:36:29,410 [Worker-46: Launching AutherRepoTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 00:36:29,416 [Worker-46: Launching AutherRepoTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 14:33:41,476 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 14:33:41,521 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 14:33:41,530 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 14:36:20,924 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 14:36:20,973 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 14:36:20,986 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 14:36:29,909 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 14:36:29,912 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 14:36:29,917 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 14:37:55,839 [Worker-61: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-12-27 14:37:57,599 [Worker-61: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:jpa-library-project-1:0.0.1-SNAPSHOT @ D:\Spring_projects\Library_management_backend\jpa-library-project\pom.xml.
+2024-12-27 14:38:02,565 [Worker-61: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jpa-library-project/src/main/java
+2024-12-27 14:38:02,566 [Worker-61: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jpa-library-project/src/main/resources
+2024-12-27 14:38:02,566 [Worker-61: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jpa-library-project/src/main/resources
+2024-12-27 14:38:02,567 [Worker-61: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jpa-library-project/src/test/java
+2024-12-27 14:38:02,567 [Worker-61: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jpa-library-project/src/test/resources
+2024-12-27 14:38:03,131 [Worker-61: Updating Maven Project] INFO  o.e.m.jdt.internal.UnitTestSupport - Reset launch configuration name: JpaLibraryProject1ApplicationTests
+2024-12-27 14:38:03,131 [Worker-61: Updating Maven Project] INFO  o.e.m.jdt.internal.UnitTestSupport - Updating JpaLibraryProject1ApplicationTests from maven configuration
+2024-12-27 14:38:03,961 [Worker-61: Updating Maven Project] INFO  o.e.m.jdt.internal.UnitTestSupport - Reset launch configuration name: AutherRepoTest
+2024-12-27 14:38:03,961 [Worker-61: Updating Maven Project] INFO  o.e.m.jdt.internal.UnitTestSupport - Updating AutherRepoTest from maven configuration
+2024-12-27 14:38:04,484 [Worker-61: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for jpa-library-project
+2024-12-27 14:38:04,558 [Worker-61: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 6.00 sec, update config takes 1.00 sec 
+2024-12-27 14:38:09,566 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 14:38:09,659 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 14:38:09,865 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 14:38:09,866 [Worker-60: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of jpa-library-project
+2024-12-27 14:38:09,867 [Worker-60: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for jpa-library-project
+2024-12-27 14:41:52,912 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 14:41:52,965 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 14:41:52,970 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 14:45:22,060 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 14:45:22,386 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 14:45:22,406 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 14:46:01,387 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 14:46:01,391 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 14:46:01,395 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 14:54:29,717 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 14:54:29,745 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 14:54:29,754 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:02:02,202 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-12.0.12; built: 2024-07-25T21:58:37.668Z; git: cc6f1b74db755fed228b50701ad967aeaa68e83f; jvm 21.0.4+7-LTS
+2024-12-27 15:02:02,310 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started oeje8n.ContextHandler$CoreContextHandler@7d530deb{/help,/help,b=null,a=AVAILABLE,h=oeje8n.ContextHandler$CoreContextHandler$CoreToNestedHandler@2588227d{STARTED}}
+2024-12-27 15:02:02,313 [Start Help Server] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2024-12-27 15:02:02,392 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@701255da{HTTP/1.1, (http/1.1)}{127.0.0.1:51249}
+2024-12-27 15:02:02,451 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@6a0d0ef4{STARTING}[12.0.12,sto=0] @59768508ms
+2024-12-27 15:02:49,301 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 15:02:49,309 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 15:02:49,314 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:04:53,973 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 15:04:53,993 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 15:04:54,002 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:05:03,002 [main] INFO  o.e.m.jdt.internal.UnitTestSupport - Updating AutherServiceTest from maven configuration
+2024-12-27 15:07:30,855 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 15:07:30,861 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 15:07:30,867 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:14:36,073 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 15:14:36,102 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 15:14:36,106 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:16:03,692 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 15:16:03,728 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 15:16:03,737 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:16:10,060 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 15:16:10,062 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 15:16:10,069 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:16:49,203 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 15:16:49,577 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 15:16:49,592 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:16:57,808 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 15:16:57,976 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 15:16:57,986 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:17:08,599 [Worker-83: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 15:17:08,798 [Worker-83: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 15:17:08,802 [Worker-83: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:17:19,824 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 15:17:19,854 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 15:17:19,872 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:17:30,613 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 15:17:30,622 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 15:17:30,631 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:18:00,554 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 15:18:00,566 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 15:18:00,573 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:18:04,017 [Worker-83: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 15:18:04,040 [Worker-83: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 15:18:04,052 [Worker-83: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:18:06,374 [Worker-83: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 15:18:06,457 [Worker-83: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 15:18:06,462 [Worker-83: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:19:37,543 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 15:19:37,558 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 15:19:37,569 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:26:57,109 [Worker-87: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 15:26:57,265 [Worker-87: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 15:26:57,281 [Worker-87: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:43:55,019 [Worker-98: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 15:43:55,327 [Worker-98: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 15:43:55,368 [Worker-98: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:45:00,795 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 15:45:00,841 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 15:45:00,857 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:52:08,571 [Worker-105: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 15:52:08,659 [Worker-105: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 15:52:08,690 [Worker-105: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:55:10,021 [Worker-110: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 15:55:10,115 [Worker-110: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 15:55:10,134 [Worker-110: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:55:25,009 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 15:55:25,022 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 15:55:25,030 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:55:48,140 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 15:55:48,436 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 15:55:48,601 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:56:11,933 [Worker-111: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 15:56:11,960 [Worker-111: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 15:56:11,968 [Worker-111: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:57:02,110 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 15:57:02,565 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 15:57:02,579 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:57:32,699 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 15:57:32,732 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 15:57:32,741 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 15:58:00,455 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 15:58:00,536 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 15:58:00,575 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 16:04:54,775 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 16:04:55,029 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 16:04:55,123 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 16:06:26,841 [Worker-110: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 16:06:27,159 [Worker-110: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 16:06:27,193 [Worker-110: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 16:07:12,123 [Worker-115: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 16:07:12,307 [Worker-115: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 16:07:12,311 [Worker-115: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 16:10:08,119 [Worker-115: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 16:10:08,728 [Worker-115: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 16:10:08,750 [Worker-115: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 16:13:55,444 [Worker-123: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 16:13:55,628 [Worker-123: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 16:13:55,646 [Worker-123: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 16:14:53,845 [Worker-125: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 16:14:54,043 [Worker-125: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 16:14:54,049 [Worker-125: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 16:15:10,610 [Worker-128: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 16:15:10,619 [Worker-128: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 16:15:10,623 [Worker-128: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 16:15:25,725 [Worker-123: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 16:15:25,813 [Worker-123: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 16:15:25,819 [Worker-123: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 16:15:52,071 [Worker-128: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-27 16:15:52,100 [Worker-128: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-27 16:15:52,108 [Worker-128: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 16:31:52,364 [Worker-131: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 16:31:52,415 [Worker-131: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 16:31:52,420 [Worker-131: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-27 16:40:39,005 [Worker-137: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 16:40:39,209 [Worker-137: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-27 16:40:39,317 [Worker-137: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 16:24:12,023 [Worker-165: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:24:12,072 [Worker-165: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:24:12,087 [Worker-165: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 16:36:03,916 [Worker-174: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:36:03,958 [Worker-174: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:36:03,977 [Worker-174: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 16:36:07,168 [main] INFO  o.e.m.jdt.internal.UnitTestSupport - Updating AutherControllerTest from maven configuration
+2024-12-28 16:36:35,261 [Worker-169: Launching AutherControllerTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:36:35,263 [Worker-169: Launching AutherControllerTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:36:35,271 [Worker-169: Launching AutherControllerTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 16:37:17,583 [Worker-174: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:37:17,588 [Worker-174: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:37:17,595 [Worker-174: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 16:39:44,730 [Worker-176: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:39:44,768 [Worker-176: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:39:44,785 [Worker-176: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 16:40:38,342 [Worker-183: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:40:38,347 [Worker-183: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:40:38,356 [Worker-183: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 16:45:01,149 [Worker-174: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:45:01,194 [Worker-174: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:45:01,203 [Worker-174: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 16:47:11,469 [Worker-181: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:47:11,490 [Worker-181: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:47:11,499 [Worker-181: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 16:47:26,470 [Worker-181: Launching AutherControllerTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:47:26,472 [Worker-181: Launching AutherControllerTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:47:26,653 [Worker-181: Launching AutherControllerTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 16:48:30,681 [Worker-185: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:48:30,684 [Worker-185: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:48:30,705 [Worker-185: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 16:50:19,518 [Worker-184: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:50:19,521 [Worker-184: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:50:19,525 [Worker-184: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 16:50:44,144 [Worker-184: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:50:44,146 [Worker-184: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:50:44,150 [Worker-184: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 16:57:28,688 [Worker-188: Launching AutherControllerTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 16:57:28,755 [Worker-188: Launching AutherControllerTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 16:57:28,833 [Worker-188: Launching AutherControllerTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 16:58:59,746 [Worker-188: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:58:59,749 [Worker-188: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 16:58:59,755 [Worker-188: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 17:00:24,997 [Worker-180: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 17:00:25,004 [Worker-180: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 17:00:25,009 [Worker-180: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 17:02:25,919 [Worker-184: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 17:02:25,946 [Worker-184: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 17:02:25,950 [Worker-184: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 17:03:50,139 [Worker-188: Launching AutherControllerTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 17:03:50,144 [Worker-188: Launching AutherControllerTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 17:03:50,148 [Worker-188: Launching AutherControllerTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 17:04:30,791 [Worker-186: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 17:04:30,794 [Worker-186: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 17:04:30,797 [Worker-186: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 17:06:13,729 [Worker-184: Launching AutherControllerTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 17:06:13,735 [Worker-184: Launching AutherControllerTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 17:06:13,741 [Worker-184: Launching AutherControllerTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 17:08:11,619 [Worker-188: Launching AutherControllerTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 17:08:11,632 [Worker-188: Launching AutherControllerTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 17:08:11,642 [Worker-188: Launching AutherControllerTest] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 17:11:14,706 [Worker-192: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 17:11:14,761 [Worker-192: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 17:11:14,766 [Worker-192: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 17:12:28,263 [Worker-191: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 17:12:28,272 [Worker-191: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 17:12:28,383 [Worker-191: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 17:58:41,221 [Worker-211: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 17:58:41,274 [Worker-211: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 17:58:41,285 [Worker-211: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 18:02:37,539 [Worker-214: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 18:02:37,686 [Worker-214: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 18:02:37,741 [Worker-214: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 22:22:36,121 [Worker-227: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 22:22:36,151 [Worker-227: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 22:22:36,160 [Worker-227: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 22:23:08,340 [Worker-221: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 22:23:08,555 [Worker-221: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 22:23:08,656 [Worker-221: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 22:25:39,583 [Worker-228: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 22:25:39,609 [Worker-228: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 22:25:39,613 [Worker-228: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 22:33:19,456 [Worker-226: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 22:33:19,477 [Worker-226: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 22:33:19,485 [Worker-226: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 22:34:16,667 [Worker-233: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 22:34:17,255 [Worker-233: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 22:34:17,270 [Worker-233: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 22:34:26,085 [Worker-235: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 22:34:26,095 [Worker-235: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 22:34:26,099 [Worker-235: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 22:37:17,911 [Worker-230: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 22:37:17,935 [Worker-230: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 22:37:17,947 [Worker-230: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 22:44:57,147 [Worker-236: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 22:44:57,181 [Worker-236: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 22:44:57,188 [Worker-236: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 22:47:11,244 [Worker-242: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 22:47:11,903 [Worker-242: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 22:47:11,952 [Worker-242: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 22:47:47,122 [Worker-243: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 22:47:47,343 [Worker-243: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 22:47:47,351 [Worker-243: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 22:49:42,123 [Worker-242: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 22:49:42,200 [Worker-242: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 22:49:42,207 [Worker-242: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 22:49:47,123 [Worker-247: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 22:49:47,243 [Worker-247: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 22:49:47,270 [Worker-247: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 22:50:00,544 [Worker-246: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 22:50:00,720 [Worker-246: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 22:50:00,730 [Worker-246: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 22:51:09,711 [Worker-243: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 22:51:09,924 [Worker-243: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 22:51:09,933 [Worker-243: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 22:51:12,601 [Worker-245: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 22:51:13,280 [Worker-245: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 22:51:13,318 [Worker-245: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 22:53:59,426 [Worker-250: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 22:53:59,479 [Worker-250: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 22:53:59,488 [Worker-250: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 22:54:24,386 [Worker-251: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 22:54:24,432 [Worker-251: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 22:54:24,438 [Worker-251: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 22:54:50,886 [Worker-247: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 22:54:52,036 [Worker-247: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 22:54:52,104 [Worker-247: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 22:55:23,327 [Worker-252: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 22:55:23,455 [Worker-252: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 22:55:23,463 [Worker-252: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 22:57:08,725 [Worker-242: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 22:57:08,730 [Worker-242: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 22:57:08,734 [Worker-242: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 22:59:30,335 [Worker-242: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 22:59:30,341 [Worker-242: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 22:59:30,346 [Worker-242: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 22:59:52,076 [Worker-252: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 22:59:52,362 [Worker-252: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 22:59:52,372 [Worker-252: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:00:01,803 [Worker-250: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 23:00:02,161 [Worker-250: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 23:00:02,171 [Worker-250: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:00:12,958 [Worker-247: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 23:00:13,212 [Worker-247: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 23:00:13,222 [Worker-247: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:00:40,323 [Worker-247: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 23:00:40,460 [Worker-247: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 23:00:40,632 [Worker-247: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:00:53,047 [Worker-249: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:00:53,056 [Worker-249: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:00:53,060 [Worker-249: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:01:00,753 [Worker-242: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:01:00,770 [Worker-242: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:01:00,782 [Worker-242: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:01:48,788 [Worker-250: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 23:01:49,063 [Worker-250: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 23:01:49,084 [Worker-250: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:02:05,745 [Worker-254: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 23:02:06,025 [Worker-254: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 23:02:06,029 [Worker-254: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:02:49,766 [Worker-252: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 23:02:49,997 [Worker-252: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 23:02:50,006 [Worker-252: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:02:59,730 [Worker-255: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 23:02:59,817 [Worker-255: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 23:02:59,828 [Worker-255: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:03:36,119 [Worker-242: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:03:36,123 [Worker-242: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:03:36,126 [Worker-242: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:03:50,369 [Worker-251: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:03:50,370 [Worker-251: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:03:50,373 [Worker-251: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:09:58,540 [Worker-258: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 23:09:58,830 [Worker-258: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 23:09:58,851 [Worker-258: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:11:44,536 [Worker-256: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:11:44,557 [Worker-256: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:11:44,570 [Worker-256: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:13:34,349 [Worker-242: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:13:34,357 [Worker-242: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:13:34,363 [Worker-242: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:16:23,139 [Worker-264: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:16:23,182 [Worker-264: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:16:23,192 [Worker-264: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:16:41,824 [Worker-264: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:16:41,826 [Worker-264: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:16:41,840 [Worker-264: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:18:29,505 [Worker-262: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:18:29,525 [Worker-262: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:18:29,529 [Worker-262: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:20:46,091 [Worker-263: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:20:46,108 [Worker-263: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:20:46,114 [Worker-263: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:20:52,733 [Worker-266: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 23:20:52,816 [Worker-266: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 23:20:52,831 [Worker-266: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:20:55,652 [Worker-256: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 23:20:55,698 [Worker-256: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 23:20:55,705 [Worker-256: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:21:01,972 [Worker-266: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:21:01,974 [Worker-266: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:21:01,978 [Worker-266: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:21:06,045 [Worker-265: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:21:06,047 [Worker-265: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:21:06,054 [Worker-265: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:25:29,167 [Worker-266: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:25:29,201 [Worker-266: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:25:29,216 [Worker-266: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:25:37,455 [Worker-270: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 23:25:37,722 [Worker-270: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 23:25:37,732 [Worker-270: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:31:47,392 [Worker-275: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 23:31:47,500 [Worker-275: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 23:31:47,518 [Worker-275: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:32:00,076 [Worker-275: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 23:32:00,450 [Worker-275: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 23:32:00,499 [Worker-275: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:36:21,505 [Worker-280: Launching jpa-library-project - JpaLibraryProject1Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:36:21,530 [Worker-280: Launching jpa-library-project - JpaLibraryProject1Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:36:21,534 [Worker-280: Launching jpa-library-project - JpaLibraryProject1Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:40:58,529 [Worker-275: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 23:40:58,654 [Worker-275: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 23:40:58,673 [Worker-275: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:45:00,315 [Worker-287: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-12-28 23:45:03,914 [Worker-287: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:jpa-library-project-1:0.0.1-SNAPSHOT @ D:\Spring_projects\Library_management_backend\jpa-library-project\pom.xml.
+2024-12-28 23:45:08,859 [Worker-287: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jpa-library-project/src/main/java
+2024-12-28 23:45:08,861 [Worker-287: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jpa-library-project/src/main/resources
+2024-12-28 23:45:08,862 [Worker-287: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jpa-library-project/src/main/resources
+2024-12-28 23:45:08,863 [Worker-287: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jpa-library-project/src/test/java
+2024-12-28 23:45:08,866 [Worker-287: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jpa-library-project/src/test/resources
+2024-12-28 23:45:09,591 [Worker-287: Updating Maven Project] INFO  o.e.m.jdt.internal.UnitTestSupport - Reset launch configuration name: JpaLibraryProject1ApplicationTests
+2024-12-28 23:45:09,591 [Worker-287: Updating Maven Project] INFO  o.e.m.jdt.internal.UnitTestSupport - Updating JpaLibraryProject1ApplicationTests from maven configuration
+2024-12-28 23:45:10,810 [Worker-287: Updating Maven Project] INFO  o.e.m.jdt.internal.UnitTestSupport - Reset launch configuration name: AutherRepoTest
+2024-12-28 23:45:10,810 [Worker-287: Updating Maven Project] INFO  o.e.m.jdt.internal.UnitTestSupport - Updating AutherRepoTest from maven configuration
+2024-12-28 23:45:10,817 [Worker-287: Updating Maven Project] INFO  o.e.m.jdt.internal.UnitTestSupport - Reset launch configuration name: AutherServiceTest
+2024-12-28 23:45:10,817 [Worker-287: Updating Maven Project] INFO  o.e.m.jdt.internal.UnitTestSupport - Updating AutherServiceTest from maven configuration
+2024-12-28 23:45:10,823 [Worker-287: Updating Maven Project] INFO  o.e.m.jdt.internal.UnitTestSupport - Reset launch configuration name: AutherControllerTest
+2024-12-28 23:45:10,824 [Worker-287: Updating Maven Project] INFO  o.e.m.jdt.internal.UnitTestSupport - Updating AutherControllerTest from maven configuration
+2024-12-28 23:45:11,405 [Worker-287: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for jpa-library-project
+2024-12-28 23:45:11,516 [Worker-287: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 8.00 sec, update config takes 2.00 sec 
+2024-12-28 23:45:52,843 [Worker-289: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 23:45:53,233 [Worker-289: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 23:45:53,604 [Worker-289: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:45:53,605 [Worker-289: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of jpa-library-project
+2024-12-28 23:45:53,605 [Worker-289: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for jpa-library-project
+2024-12-28 23:51:30,632 [Worker-304: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:51:30,684 [Worker-304: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:51:30,699 [Worker-304: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:51:52,677 [Worker-308: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:51:52,679 [Worker-308: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-28 23:51:52,683 [Worker-308: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-28 23:54:04,693 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-12-28 23:54:11,043 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-28 23:54:11,107 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-28 23:54:11,483 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-29 00:04:01,560 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-29 00:04:01,604 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-29 00:04:01,615 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-29 00:06:02,923 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-29 00:06:02,987 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-29 00:06:02,999 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-29 00:06:14,833 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-29 00:06:14,847 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-29 00:06:14,862 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-29 00:06:30,452 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-29 00:06:30,464 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-29 00:06:30,473 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-29 00:06:50,561 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-29 00:06:50,572 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-29 00:06:50,581 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-29 00:06:58,943 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-29 00:06:58,975 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-29 00:06:58,981 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-29 00:07:35,059 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-29 00:07:35,061 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-29 00:07:35,067 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-29 00:07:45,507 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-29 00:07:45,510 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-29 00:07:45,538 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-29 00:08:02,619 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-29 00:08:02,621 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-29 00:08:02,632 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-29 00:08:12,710 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-29 00:08:12,713 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-29 00:08:12,719 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-29 00:08:30,371 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-29 00:08:30,375 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-29 00:08:30,380 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-29 00:08:47,948 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-29 00:08:48,063 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-29 00:08:48,074 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-29 00:09:55,980 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-29 00:09:55,991 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-29 00:09:55,998 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-29 00:10:03,717 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-29 00:10:03,718 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-29 00:10:03,722 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-29 00:10:15,992 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-29 00:10:15,994 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-29 00:10:16,001 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-29 00:12:49,599 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-29 00:12:49,631 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-29 00:12:49,659 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-29 00:12:53,258 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-29 00:12:53,260 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-29 00:12:53,269 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-29 00:13:36,515 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-29 00:13:36,517 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-29 00:13:36,526 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-29 00:13:40,597 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-29 00:13:40,642 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2024-12-29 00:13:40,649 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources
+2024-12-29 00:16:03,008 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-29 00:16:03,029 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-29 00:16:03,040 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Spring_projects\Library_management_backend\jpa-library-project\src\test\resources

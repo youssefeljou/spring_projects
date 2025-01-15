@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AutherServiceTest" project="jpa-library-project" tests="2" started="2" failures="0" errors="2" ignored="0">
+  <testsuite name="com.example.book.service.AutherServiceTest" time="4.814" displayname="AutherServiceTest" uniqueid="[engine:junit-jupiter]/[class:com.example.book.service.AutherServiceTest]">
+    <testcase name="findByEmailNotFoundServiceTest" classname="com.example.book.service.AutherServiceTest" time="4.808" displayname="findByEmailNotFoundServiceTest()" uniqueid="[engine:junit-jupiter]/[class:com.example.book.service.AutherServiceTest]/[method:findByEmailNotFoundServiceTest()]">
+      <error>java.lang.NullPointerException: Cannot invoke "com.example.book.repository.AutherRepo.findByEmail(String)" because "this.autherRepo" is null&#13;
+	at com.example.book.service.AutherServiceTest.findByEmailNotFoundServiceTest(AutherServiceTest.java:28)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="findByEmailFoundServiceTest" classname="com.example.book.service.AutherServiceTest" time="0.005" displayname="findByEmailFoundServiceTest()" uniqueid="[engine:junit-jupiter]/[class:com.example.book.service.AutherServiceTest]/[method:findByEmailFoundServiceTest()]">
+      <error>java.lang.NullPointerException: Cannot invoke "com.example.book.repository.AutherRepo.findByEmail(String)" because "this.autherRepo" is null&#13;
+	at com.example.book.service.AutherServiceTest.findByEmailFoundServiceTest(AutherServiceTest.java:39)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

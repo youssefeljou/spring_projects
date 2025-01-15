@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AutherServiceTest" project="jpa-library-project" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.example.book.service.AutherServiceTest" time="0.402" displayname="AutherServiceTest" uniqueid="[engine:junit-jupiter]/[class:com.example.book.service.AutherServiceTest]">
+    <testcase name="findByEmailNotFoundServiceTest" classname="com.example.book.service.AutherServiceTest" time="0.37" displayname="findByEmailNotFoundServiceTest()" uniqueid="[engine:junit-jupiter]/[class:com.example.book.service.AutherServiceTest]/[method:findByEmailNotFoundServiceTest()]"/>
+    <testcase name="findByEmailFoundServiceTest" classname="com.example.book.service.AutherServiceTest" time="0.027" displayname="findByEmailFoundServiceTest()" uniqueid="[engine:junit-jupiter]/[class:com.example.book.service.AutherServiceTest]/[method:findByEmailFoundServiceTest()]"/>
+  </testsuite>
+</testrun>

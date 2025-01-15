@@ -1,0 +1,49 @@
+package com.example.book.dto;
+
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.annotations.Formula;
+
+import com.example.book.base.BaseDto;
+import com.example.book.entity.Book;
+import com.example.book.validator.IpAddress;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
+import jakarta.persistence.OneToMany;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+/**
+ * Data Transfer Object (DTO) for the Author entity. This class is used to
+ * transfer data between layers of the application, typically between the API
+ * and service layers.
+ */
+@Setter
+@Getter
+@Builder
+public class AutherDto extends BaseDto<Long> {
+
+	@Formula("(select count(*) from books book where book.auther_id = id)")
+	private long bookCount;
+
+	@IpAddress
+	private String ipAddress;
+
+	@Email(message = "Invalid email format")
+	private String email;
+
+	@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
+	@OneToMany(mappedBy = "auther")
+	private List<Book> books = new ArrayList<>();
+
+	private String imagePath;
+}

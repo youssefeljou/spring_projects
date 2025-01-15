@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AutherControllerTest" project="jpa-library-project" tests="2" started="2" failures="0" errors="2" ignored="0">
+  <testsuite name="com.example.book.controller.AutherControllerTest" time="0.105" displayname="AutherControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.example.book.controller.AutherControllerTest]">
+    <testcase name="insertAutherTest" classname="com.example.book.controller.AutherControllerTest" time="0.001" displayname="insertAutherTest()" uniqueid="[engine:junit-jupiter]/[class:com.example.book.controller.AutherControllerTest]/[method:insertAutherTest()]">
+      <error>java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@425b142e testClass = com.example.book.controller.AutherControllerTest, locations = [], classes = [com.example.book.JpaLibraryProject1Application], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true", "server.port=0"], contextCustomizers = [[ImportsContextCustomizer@23497000 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3276732, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5be067de, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@8d7fe3e2, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4648ce9, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@43b4fe19, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@4ebea12c, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@756cf158, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@94690bd7], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]&#13;
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)&#13;
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)&#13;
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.postProcessFields(MockitoTestExecutionListener.java:128)&#13;
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.injectFields(MockitoTestExecutionListener.java:112)&#13;
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:69)&#13;
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)&#13;
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:160)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)&#13;
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'autherController' defined in file [D:\Spring_projects\Library_management_backend\jpa-library-project\target\classes\com\example\book\controller\AutherController.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.example.book.mapper.AutherMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}&#13;
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)&#13;
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1371)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1208)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)&#13;
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)&#13;
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122)&#13;
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093)&#13;
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)&#13;
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)&#13;
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)&#13;
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)&#13;
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)&#13;
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)&#13;
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)&#13;
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)&#13;
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461)&#13;
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)&#13;
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)&#13;
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)&#13;
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)&#13;
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)&#13;
+	... 20 more&#13;
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.book.mapper.AutherMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}&#13;
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:2139)&#13;
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1589)&#13;
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)&#13;
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)&#13;
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)&#13;
+	... 47 more&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="findByEmailFoundTest" classname="com.example.book.controller.AutherControllerTest" time="0.0" displayname="findByEmailFoundTest()" uniqueid="[engine:junit-jupiter]/[class:com.example.book.controller.AutherControllerTest]/[method:findByEmailFoundTest()]">
+      <error>java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@425b142e testClass = com.example.book.controller.AutherControllerTest, locations = [], classes = [com.example.book.JpaLibraryProject1Application], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true", "server.port=0"], contextCustomizers = [[ImportsContextCustomizer@23497000 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3276732, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5be067de, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@8d7fe3e2, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4648ce9, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@43b4fe19, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@4ebea12c, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@756cf158, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@94690bd7], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]&#13;
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:145)&#13;
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)&#13;
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.postProcessFields(MockitoTestExecutionListener.java:128)&#13;
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.injectFields(MockitoTestExecutionListener.java:112)&#13;
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:69)&#13;
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)&#13;
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:160)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)&#13;
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)&#13;
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>
