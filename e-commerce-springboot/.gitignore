@@ -1,0 +1,43 @@
+# Maven build output
+/e-commerce/target/
+
+# IntelliJ IDEA
+.idea/*.xml
+*.iml
+*.iws
+*.ipr
+
+# VS Code (if used)
+/.vscode/
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Generated files
+*.class
+
+# Build tools
+/dist/
+/out/
+
+# Lombok generated delombok folder (if used)
+/delombok/
+
+# Eclipse (if someone uses it)
+.classpath
+.project
+.settings/
+
+# Backup files
+*.swp
+*~
+
+# Node/npm stuff (if you use frontend modules)
+node_modules/
+/.idea
+.idea/compiler.xml
+e-commerce/target/classes/application.properties
